@@ -473,7 +473,7 @@ if __name__ == "__main__":
     parser.add_argument('--learning_rate', type=float, default=2e-5,
                         help="Learning rate for the optimizer")
     parser.add_argument('--data_dir', type=str,
-                        default="C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset",
+                        default="dataset/tomato_leaf_dataset",
                         help="Path to the dataset root directory")
     parser.add_argument('--test_image', type=str,
                         default="C:/Users/nisha/OneDrive/Desktop/test_image.jpg",

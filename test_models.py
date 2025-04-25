@@ -1,5 +1,5 @@
+#!/usr/bin/env python3
 import torch
-import torch.nn as nn
 from torchvision import datasets
 from torchvision import transforms
 from torch.utils.data import DataLoader
@@ -8,6 +8,7 @@ import timm
 from timm.data import resolve_model_data_config, create_transform
 from PIL import Image
 import os
+import sys
 import numpy as np
 from tqdm import tqdm
 from sklearn.metrics import precision_recall_fscore_support, confusion_matrix
@@ -18,6 +19,16 @@ import argparse
 import traceback
 import logging
 import random
+
+# Add project root to sys.path for custom module imports
+project_root = os.path.abspath(os.path.dirname(__file__))
+sys.path.append(project_root)
+sys.path.append(os.path.join(project_root, 'CCT/src'))
+
+try:
+    from CCT.src.cct import cct_7_7x2_224, cct_14_7x2_224
+except ImportError as e:
+    raise ImportError(f"Failed to import src.cct: {e}")
 
 # Set random seed for reproducibility
 def set_seed(seed=42):
@@ -146,7 +157,9 @@ def evaluate_model(model, test_loader, device, model_type, variant, output_dir, 
     cm_df.to_csv(cm_csv_path)
     print(f"Saved confusion matrix to {cm_csv_path}")
 
+    # Return metrics with model_variant for CSV
     return {
+        'model_variant': f"{model_type}-{variant}",
         'models': model_type,
         'variant': variant,
         'accuracy': accuracy,
@@ -221,16 +234,16 @@ def main(args):
         {
             'type': 'CCT',
             'variants': [
-                ('small', 'cct_7_7x1_224', 'outputs_cct/models/cct_small_best.pth'),
-                ('base', 'cct_14_7x1_224', 'outputs_cct/models/cct_base_best.pth'),
+                ('small', 'cct_7_7x2_224', 'outputs_cct/cct_7_7x2_224-20250425-123049/models/cct_7_7x2_224_best.pth'),
+                ('base', 'cct_14_7x2_224', 'outputs_cct/cct_14_7x2_224-20250425-074018/models/cct_14_7x2_224_best.pth'),
             ]
         },
         {
             'type': 'EfficientViT',
             'variants': [
-                ('b0', 'efficientvit_b0.r224_in1k', 'outputs_efficientvit/models/efficientvit_b0_best.pth'),
-                ('b2', 'efficientvit_b2.r224_in1k', 'outputs_efficientvit/models/efficientvit_b2_best.pth'),
-                ('m5', 'efficientvit_m5.r224_in1k', 'outputs_efficientvit/models/efficientvit_m5_best.pth'),
+                ('b0', 'efficientvit_b0.r224_in1k', 'outputs_efficientvit/efficientvit_b0_best.pth'),
+                ('b2', 'efficientvit_b2.r224_in1k', 'outputs_efficientvit/efficientvit_b2_best.pth'),
+                ('m5', 'efficientvit_m5.r224_in1k', 'outputs_efficientvit/efficientvit_m5_best.pth'),
             ]
         },
         {
@@ -257,14 +270,14 @@ def main(args):
                 ('base', 'vit_base_patch16_224', 'outputs_vit/vit_base_best.pth')
             ]
         },
-        # {
-        #     'type': 'ConvNeXt',
-        #     'variants': [
-        #         ('tiny', 'convnext_tiny', 'outputs_convnext/convnext_tiny_best.pth'),
-        #         ('small', 'convnext_small', 'outputs_convnext/convnext_small_best.pth'),
-        #         # ('base', 'convnext_base', 'outputs_convnext/convnext_base_best.pth')
-        #     ]
-        # }
+        {
+            'type': 'ConvNeXt',
+            'variants': [
+                ('tiny', 'convnext_tiny', 'outputs_convnext/convnext_tiny_best.pth'),
+                ('small', 'convnext_small', 'outputs_convnext/convnext_small_best.pth'),
+                # ('base', 'convnext_base', 'outputs_convnext/convnext_base_best.pth')
+            ]
+        }
     ]
 
     metrics_list = []
@@ -282,6 +295,31 @@ def main(args):
                         num_labels=num_classes,
                         ignore_mismatched_sizes=True
                     )
+                    transform = transforms.Compose([
+                        transforms.Resize((224, 224)),
+                        transforms.ToTensor(),
+                        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+                    ])
+                elif model_type == "CCT":
+                    # Instantiate custom CCT models
+                    if model_name == 'cct_7_7x2_224':
+                        model = cct_7_7x2_224(
+                            pretrained=False,
+                            progress=False,
+                            img_size=224,
+                            positional_embedding='learnable',
+                            num_classes=num_classes
+                        )
+                    elif model_name == 'cct_14_7x2_224':
+                        model = cct_14_7x2_224(
+                            pretrained=False,
+                            progress=False,
+                            img_size=224,
+                            positional_embedding='learnable',
+                            num_classes=num_classes
+                        )
+                    else:
+                        raise ValueError(f"Unsupported CCT model: {model_name}")
                     transform = transforms.Compose([
                         transforms.Resize((224, 224)),
                         transforms.ToTensor(),
@@ -332,7 +370,7 @@ if __name__ == "__main__":
     parser.add_argument('--batch_size', type=int, default=16,
                         help="Batch size for testing")
     parser.add_argument('--data_dir', type=str,
-                        default="C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset",
+                        default="dataset/tomato_leaf_dataset",
                         help="Path to the dataset root directory")
 
     args = parser.parse_args()

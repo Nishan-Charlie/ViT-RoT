@@ -38,3 +38,198 @@
 2025-04-23 19:51:44,981 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_all_models.csv
 2025-04-24 10:10:48,361 - INFO - Starting model evaluation
 2025-04-24 10:10:49,034 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-04-25 18:25:50,207 - INFO - Starting models evaluation
+2025-04-25 18:25:51,869 - ERROR - Test dataset validation failed: Directory C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset\val does not exist
+2025-04-25 18:28:02,648 - INFO - Starting models evaluation
+2025-04-25 18:28:05,072 - INFO - Evaluating CCT-small (cct_7_7x1_224)
+2025-04-25 18:28:05,073 - ERROR - Error evaluating CCT-small: Unknown model (cct_7_7x1_224)
+2025-04-25 18:28:05,075 - INFO - Evaluating CCT-base (cct_14_7x1_224)
+2025-04-25 18:28:05,075 - ERROR - Error evaluating CCT-base: Unknown model (cct_14_7x1_224)
+2025-04-25 18:28:05,075 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-04-25 18:28:27,578 - INFO - EfficientViT-b0: Accuracy: 98.85%, Precision: 0.9885, Recall: 0.9885, F1: 0.9885
+2025-04-25 18:28:27,578 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-04-25 18:28:57,180 - INFO - EfficientViT-b2: Accuracy: 99.00%, Precision: 0.9900, Recall: 0.9900, F1: 0.9900
+2025-04-25 18:28:57,180 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-04-25 18:29:21,260 - INFO - EfficientViT-m5: Accuracy: 97.80%, Precision: 0.9780, Recall: 0.9780, F1: 0.9780
+2025-04-25 18:29:21,260 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-04-25 18:30:12,627 - INFO - MobileViT-xx_small: Accuracy: 10.31%, Precision: 0.1073, Recall: 0.1031, F1: 0.0633
+2025-04-25 18:30:12,627 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-04-25 18:31:06,645 - INFO - MobileViT-x_small: Accuracy: 14.89%, Precision: 0.1547, Recall: 0.1489, F1: 0.0688
+2025-04-25 18:31:06,646 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-04-25 18:32:01,759 - INFO - MobileViT-small: Accuracy: 11.27%, Precision: 0.2057, Recall: 0.1127, F1: 0.0661
+2025-04-25 18:32:01,760 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-04-25 18:32:34,934 - INFO - Swin-tiny: Accuracy: 98.67%, Precision: 0.9867, Recall: 0.9867, F1: 0.9867
+2025-04-25 18:32:34,934 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-04-25 18:33:16,775 - INFO - Swin-small: Accuracy: 98.76%, Precision: 0.9876, Recall: 0.9876, F1: 0.9876
+2025-04-25 18:33:16,775 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-04-25 18:34:13,090 - INFO - Swin-base: Accuracy: 98.70%, Precision: 0.9870, Recall: 0.9870, F1: 0.9870
+2025-04-25 18:34:13,090 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-04-25 18:34:38,762 - INFO - ViT-tiny: Accuracy: 90.80%, Precision: 0.9251, Recall: 0.9080, F1: 0.9045
+2025-04-25 18:34:38,763 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-04-25 18:35:11,198 - INFO - ViT-small: Accuracy: 94.55%, Precision: 0.9510, Recall: 0.9455, F1: 0.9453
+2025-04-25 18:35:11,199 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-04-25 18:36:03,365 - INFO - ViT-base: Accuracy: 96.03%, Precision: 0.9624, Recall: 0.9603, F1: 0.9604
+2025-04-25 18:36:03,365 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-04-25 18:36:35,360 - INFO - ConvNeXt-tiny: Accuracy: 98.82%, Precision: 0.9883, Recall: 0.9882, F1: 0.9882
+2025-04-25 18:36:35,360 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-04-25 18:37:13,236 - INFO - ConvNeXt-small: Accuracy: 98.79%, Precision: 0.9879, Recall: 0.9879, F1: 0.9879
+2025-04-25 18:37:13,238 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_all_models.csv
+2025-04-25 18:56:17,094 - INFO - Starting models evaluation
+2025-04-25 18:56:19,379 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-04-25 18:56:39,906 - INFO - CCT-small: Accuracy: 98.28%, Precision: 0.9828, Recall: 0.9828, F1: 0.9828
+2025-04-25 18:56:39,906 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-04-25 18:56:40,076 - ERROR - Error evaluating CCT-base: Error(s) in loading state_dict for CCT:
+	Missing key(s) in state_dict: "classifier.blocks.7.pre_norm.weight", "classifier.blocks.7.pre_norm.bias", "classifier.blocks.7.self_attn.qkv.weight", "classifier.blocks.7.self_attn.proj.weight", "classifier.blocks.7.self_attn.proj.bias", "classifier.blocks.7.linear1.weight", "classifier.blocks.7.linear1.bias", "classifier.blocks.7.norm1.weight", "classifier.blocks.7.norm1.bias", "classifier.blocks.7.linear2.weight", "classifier.blocks.7.linear2.bias", "classifier.blocks.8.pre_norm.weight", "classifier.blocks.8.pre_norm.bias", "classifier.blocks.8.self_attn.qkv.weight", "classifier.blocks.8.self_attn.proj.weight", "classifier.blocks.8.self_attn.proj.bias", "classifier.blocks.8.linear1.weight", "classifier.blocks.8.linear1.bias", "classifier.blocks.8.norm1.weight", "classifier.blocks.8.norm1.bias", "classifier.blocks.8.linear2.weight", "classifier.blocks.8.linear2.bias", "classifier.blocks.9.pre_norm.weight", "classifier.blocks.9.pre_norm.bias", "classifier.blocks.9.self_attn.qkv.weight", "classifier.blocks.9.self_attn.proj.weight", "classifier.blocks.9.self_attn.proj.bias", "classifier.blocks.9.linear1.weight", "classifier.blocks.9.linear1.bias", "classifier.blocks.9.norm1.weight", "classifier.blocks.9.norm1.bias", "classifier.blocks.9.linear2.weight", "classifier.blocks.9.linear2.bias", "classifier.blocks.10.pre_norm.weight", "classifier.blocks.10.pre_norm.bias", "classifier.blocks.10.self_attn.qkv.weight", "classifier.blocks.10.self_attn.proj.weight", "classifier.blocks.10.self_attn.proj.bias", "classifier.blocks.10.linear1.weight", "classifier.blocks.10.linear1.bias", "classifier.blocks.10.norm1.weight", "classifier.blocks.10.norm1.bias", "classifier.blocks.10.linear2.weight", "classifier.blocks.10.linear2.bias", "classifier.blocks.11.pre_norm.weight", "classifier.blocks.11.pre_norm.bias", "classifier.blocks.11.self_attn.qkv.weight", "classifier.blocks.11.self_attn.proj.weight", "classifier.blocks.11.self_attn.proj.bias", "classifier.blocks.11.linear1.weight", "classifier.blocks.11.linear1.bias", "classifier.blocks.11.norm1.weight", "classifier.blocks.11.norm1.bias", "classifier.blocks.11.linear2.weight", "classifier.blocks.11.linear2.bias", "classifier.blocks.12.pre_norm.weight", "classifier.blocks.12.pre_norm.bias", "classifier.blocks.12.self_attn.qkv.weight", "classifier.blocks.12.self_attn.proj.weight", "classifier.blocks.12.self_attn.proj.bias", "classifier.blocks.12.linear1.weight", "classifier.blocks.12.linear1.bias", "classifier.blocks.12.norm1.weight", "classifier.blocks.12.norm1.bias", "classifier.blocks.12.linear2.weight", "classifier.blocks.12.linear2.bias", "classifier.blocks.13.pre_norm.weight", "classifier.blocks.13.pre_norm.bias", "classifier.blocks.13.self_attn.qkv.weight", "classifier.blocks.13.self_attn.proj.weight", "classifier.blocks.13.self_attn.proj.bias", "classifier.blocks.13.linear1.weight", "classifier.blocks.13.linear1.bias", "classifier.blocks.13.norm1.weight", "classifier.blocks.13.norm1.bias", "classifier.blocks.13.linear2.weight", "classifier.blocks.13.linear2.bias". 
+	size mismatch for tokenizer.conv_layers.1.0.weight: copying a param with shape torch.Size([256, 64, 7, 7]) from checkpoint, the shape in current model is torch.Size([384, 64, 7, 7]).
+	size mismatch for classifier.positional_emb: copying a param with shape torch.Size([1, 196, 256]) from checkpoint, the shape in current model is torch.Size([1, 196, 384]).
+	size mismatch for classifier.attention_pool.weight: copying a param with shape torch.Size([1, 256]) from checkpoint, the shape in current model is torch.Size([1, 384]).
+	size mismatch for classifier.blocks.0.pre_norm.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.0.pre_norm.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.0.self_attn.qkv.weight: copying a param with shape torch.Size([768, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.0.self_attn.proj.weight: copying a param with shape torch.Size([256, 256]) from checkpoint, the shape in current model is torch.Size([384, 384]).
+	size mismatch for classifier.blocks.0.self_attn.proj.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.0.linear1.weight: copying a param with shape torch.Size([512, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.0.linear1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for classifier.blocks.0.norm1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.0.norm1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.0.linear2.weight: copying a param with shape torch.Size([256, 512]) from checkpoint, the shape in current model is torch.Size([384, 1152]).
+	size mismatch for classifier.blocks.0.linear2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.1.pre_norm.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.1.pre_norm.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.1.self_attn.qkv.weight: copying a param with shape torch.Size([768, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.1.self_attn.proj.weight: copying a param with shape torch.Size([256, 256]) from checkpoint, the shape in current model is torch.Size([384, 384]).
+	size mismatch for classifier.blocks.1.self_attn.proj.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.1.linear1.weight: copying a param with shape torch.Size([512, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.1.linear1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for classifier.blocks.1.norm1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.1.norm1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.1.linear2.weight: copying a param with shape torch.Size([256, 512]) from checkpoint, the shape in current model is torch.Size([384, 1152]).
+	size mismatch for classifier.blocks.1.linear2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.2.pre_norm.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.2.pre_norm.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.2.self_attn.qkv.weight: copying a param with shape torch.Size([768, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.2.self_attn.proj.weight: copying a param with shape torch.Size([256, 256]) from checkpoint, the shape in current model is torch.Size([384, 384]).
+	size mismatch for classifier.blocks.2.self_attn.proj.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.2.linear1.weight: copying a param with shape torch.Size([512, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.2.linear1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for classifier.blocks.2.norm1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.2.norm1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.2.linear2.weight: copying a param with shape torch.Size([256, 512]) from checkpoint, the shape in current model is torch.Size([384, 1152]).
+	size mismatch for classifier.blocks.2.linear2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.3.pre_norm.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.3.pre_norm.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.3.self_attn.qkv.weight: copying a param with shape torch.Size([768, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.3.self_attn.proj.weight: copying a param with shape torch.Size([256, 256]) from checkpoint, the shape in current model is torch.Size([384, 384]).
+	size mismatch for classifier.blocks.3.self_attn.proj.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.3.linear1.weight: copying a param with shape torch.Size([512, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.3.linear1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for classifier.blocks.3.norm1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.3.norm1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.3.linear2.weight: copying a param with shape torch.Size([256, 512]) from checkpoint, the shape in current model is torch.Size([384, 1152]).
+	size mismatch for classifier.blocks.3.linear2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.4.pre_norm.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.4.pre_norm.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.4.self_attn.qkv.weight: copying a param with shape torch.Size([768, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.4.self_attn.proj.weight: copying a param with shape torch.Size([256, 256]) from checkpoint, the shape in current model is torch.Size([384, 384]).
+	size mismatch for classifier.blocks.4.self_attn.proj.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.4.linear1.weight: copying a param with shape torch.Size([512, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.4.linear1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for classifier.blocks.4.norm1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.4.norm1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.4.linear2.weight: copying a param with shape torch.Size([256, 512]) from checkpoint, the shape in current model is torch.Size([384, 1152]).
+	size mismatch for classifier.blocks.4.linear2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.5.pre_norm.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.5.pre_norm.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.5.self_attn.qkv.weight: copying a param with shape torch.Size([768, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.5.self_attn.proj.weight: copying a param with shape torch.Size([256, 256]) from checkpoint, the shape in current model is torch.Size([384, 384]).
+	size mismatch for classifier.blocks.5.self_attn.proj.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.5.linear1.weight: copying a param with shape torch.Size([512, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.5.linear1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for classifier.blocks.5.norm1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.5.norm1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.5.linear2.weight: copying a param with shape torch.Size([256, 512]) from checkpoint, the shape in current model is torch.Size([384, 1152]).
+	size mismatch for classifier.blocks.5.linear2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.6.pre_norm.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.6.pre_norm.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.6.self_attn.qkv.weight: copying a param with shape torch.Size([768, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.6.self_attn.proj.weight: copying a param with shape torch.Size([256, 256]) from checkpoint, the shape in current model is torch.Size([384, 384]).
+	size mismatch for classifier.blocks.6.self_attn.proj.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.6.linear1.weight: copying a param with shape torch.Size([512, 256]) from checkpoint, the shape in current model is torch.Size([1152, 384]).
+	size mismatch for classifier.blocks.6.linear1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for classifier.blocks.6.norm1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.6.norm1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.blocks.6.linear2.weight: copying a param with shape torch.Size([256, 512]) from checkpoint, the shape in current model is torch.Size([384, 1152]).
+	size mismatch for classifier.blocks.6.linear2.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.norm.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.norm.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([384]).
+	size mismatch for classifier.fc.weight: copying a param with shape torch.Size([11, 256]) from checkpoint, the shape in current model is torch.Size([11, 384]).
+2025-04-25 18:56:40,086 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-04-25 18:57:03,106 - INFO - EfficientViT-b0: Accuracy: 98.85%, Precision: 0.9885, Recall: 0.9885, F1: 0.9885
+2025-04-25 18:57:03,106 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-04-25 19:01:31,957 - INFO - Starting models evaluation
+2025-04-25 19:01:34,309 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-04-25 19:01:54,767 - INFO - CCT-small: Accuracy: 98.28%, Precision: 0.9828, Recall: 0.9828, F1: 0.9828
+2025-04-25 19:01:54,767 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-04-25 19:02:21,954 - INFO - CCT-base: Accuracy: 98.38%, Precision: 0.9840, Recall: 0.9838, F1: 0.9839
+2025-04-25 19:02:21,954 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-04-25 19:02:43,664 - INFO - EfficientViT-b0: Accuracy: 98.85%, Precision: 0.9885, Recall: 0.9885, F1: 0.9885
+2025-04-25 19:02:43,664 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-04-25 19:03:12,912 - INFO - EfficientViT-b2: Accuracy: 99.00%, Precision: 0.9900, Recall: 0.9900, F1: 0.9900
+2025-04-25 19:03:12,913 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-04-25 19:03:36,458 - INFO - EfficientViT-m5: Accuracy: 97.80%, Precision: 0.9780, Recall: 0.9780, F1: 0.9780
+2025-04-25 19:03:36,458 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-04-25 19:04:33,788 - INFO - MobileViT-xx_small: Accuracy: 10.31%, Precision: 0.1073, Recall: 0.1031, F1: 0.0633
+2025-04-25 19:04:33,789 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-04-25 19:05:28,404 - INFO - MobileViT-x_small: Accuracy: 14.89%, Precision: 0.1547, Recall: 0.1489, F1: 0.0688
+2025-04-25 19:05:28,405 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-04-25 19:06:21,475 - INFO - MobileViT-small: Accuracy: 11.27%, Precision: 0.2057, Recall: 0.1127, F1: 0.0661
+2025-04-25 19:06:21,475 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-04-25 19:06:53,713 - INFO - Swin-tiny: Accuracy: 98.67%, Precision: 0.9867, Recall: 0.9867, F1: 0.9867
+2025-04-25 19:06:53,714 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-04-25 19:07:36,329 - INFO - Swin-small: Accuracy: 98.76%, Precision: 0.9876, Recall: 0.9876, F1: 0.9876
+2025-04-25 19:07:36,329 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-04-25 19:08:31,419 - INFO - Swin-base: Accuracy: 98.70%, Precision: 0.9870, Recall: 0.9870, F1: 0.9870
+2025-04-25 19:08:31,419 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-04-25 19:08:54,704 - INFO - ViT-tiny: Accuracy: 90.80%, Precision: 0.9251, Recall: 0.9080, F1: 0.9045
+2025-04-25 19:08:54,705 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-04-25 19:09:21,846 - INFO - ViT-small: Accuracy: 94.55%, Precision: 0.9510, Recall: 0.9455, F1: 0.9453
+2025-04-25 19:09:21,846 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-04-25 19:10:09,405 - INFO - ViT-base: Accuracy: 96.03%, Precision: 0.9624, Recall: 0.9603, F1: 0.9604
+2025-04-25 19:10:09,405 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-04-25 19:10:38,367 - INFO - ConvNeXt-tiny: Accuracy: 98.82%, Precision: 0.9883, Recall: 0.9882, F1: 0.9882
+2025-04-25 19:10:38,368 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-04-25 19:11:15,346 - INFO - ConvNeXt-small: Accuracy: 98.79%, Precision: 0.9879, Recall: 0.9879, F1: 0.9879
+2025-04-25 19:12:12,182 - INFO - Starting models evaluation
+2025-04-25 19:12:14,597 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-04-25 19:12:35,390 - INFO - CCT-small: Accuracy: 98.28%, Precision: 0.9828, Recall: 0.9828, F1: 0.9828
+2025-04-25 19:12:35,390 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-04-25 19:13:02,809 - INFO - CCT-base: Accuracy: 98.38%, Precision: 0.9840, Recall: 0.9838, F1: 0.9839
+2025-04-25 19:13:02,809 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-04-25 19:13:24,563 - INFO - EfficientViT-b0: Accuracy: 98.85%, Precision: 0.9885, Recall: 0.9885, F1: 0.9885
+2025-04-25 19:13:24,564 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-04-25 19:13:52,253 - INFO - EfficientViT-b2: Accuracy: 99.00%, Precision: 0.9900, Recall: 0.9900, F1: 0.9900
+2025-04-25 19:13:52,253 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-04-25 19:14:14,935 - INFO - EfficientViT-m5: Accuracy: 97.80%, Precision: 0.9780, Recall: 0.9780, F1: 0.9780
+2025-04-25 19:14:14,935 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-04-25 19:15:06,653 - INFO - MobileViT-xx_small: Accuracy: 10.31%, Precision: 0.1073, Recall: 0.1031, F1: 0.0633
+2025-04-25 19:15:06,653 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-04-25 19:15:57,300 - INFO - MobileViT-x_small: Accuracy: 14.89%, Precision: 0.1547, Recall: 0.1489, F1: 0.0688
+2025-04-25 19:15:57,300 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-04-25 19:16:53,282 - INFO - MobileViT-small: Accuracy: 11.27%, Precision: 0.2057, Recall: 0.1127, F1: 0.0661
+2025-04-25 19:16:53,282 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-04-25 19:17:26,230 - INFO - Swin-tiny: Accuracy: 98.67%, Precision: 0.9867, Recall: 0.9867, F1: 0.9867
+2025-04-25 19:17:26,230 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-04-25 19:18:08,526 - INFO - Swin-small: Accuracy: 98.76%, Precision: 0.9876, Recall: 0.9876, F1: 0.9876
+2025-04-25 19:18:08,526 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-04-25 19:19:04,116 - INFO - Swin-base: Accuracy: 98.70%, Precision: 0.9870, Recall: 0.9870, F1: 0.9870
+2025-04-25 19:19:04,116 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-04-25 19:19:27,714 - INFO - ViT-tiny: Accuracy: 90.80%, Precision: 0.9251, Recall: 0.9080, F1: 0.9045
+2025-04-25 19:19:27,714 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-04-25 19:19:55,244 - INFO - ViT-small: Accuracy: 94.55%, Precision: 0.9510, Recall: 0.9455, F1: 0.9453
+2025-04-25 19:19:55,245 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-04-25 19:20:43,327 - INFO - ViT-base: Accuracy: 96.03%, Precision: 0.9624, Recall: 0.9603, F1: 0.9604
+2025-04-25 19:20:43,328 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-04-25 19:21:12,605 - INFO - ConvNeXt-tiny: Accuracy: 98.82%, Precision: 0.9883, Recall: 0.9882, F1: 0.9882
+2025-04-25 19:21:12,605 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-04-25 19:21:49,464 - INFO - ConvNeXt-small: Accuracy: 98.79%, Precision: 0.9879, Recall: 0.9879, F1: 0.9879
+2025-04-25 19:21:49,466 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_all_models.csv
