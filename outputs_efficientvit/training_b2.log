@@ -1,0 +1,13 @@
+2025-04-23 22:55:12,304 - INFO - Starting training for efficientvit_b2.r224_in1k
+2025-04-23 22:55:12,376 - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientvit_b2.r224_in1k)
+2025-04-23 22:58:29,025 - INFO - [timm/efficientvit_b2.r224_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-23 22:58:29,061 - INFO - Missing keys (head.classifier.4.weight, head.classifier.4.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-23 22:58:29,074 - ERROR - Error loading model efficientvit_b2.r224_in1k: cannot import name 'calc_model_flops' from 'timm.utils' (C:\Users\nisha\OneDrive\Desktop\CSWin-Transformer\.venv\Lib\site-packages\timm\utils\__init__.py)
+2025-04-24 01:19:39,490 - INFO - Starting training for efficientvit_b2.r224_in1k
+2025-04-24 01:19:39,591 - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientvit_b2.r224_in1k)
+2025-04-24 01:19:40,244 - INFO - [timm/efficientvit_b2.r224_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-24 01:19:40,285 - INFO - Missing keys (head.classifier.4.weight, head.classifier.4.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-24 01:19:40,296 - INFO - Model efficientvit_b2.r224_in1k: 21.80M parameters
+2025-04-24 01:19:40,311 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\healthy\a9c274c1-698c-4840-984b-8cb34e7ae97b___RS_HL 0224.JPG
+2025-04-24 06:09:39,341 - INFO - Predicted class: Tomato_mosaic_virus, Probability: 0.9999
+2025-04-24 06:09:39,342 - INFO - Completed training for efficientvit_b2.r224_in1k

@@ -1,0 +1,12 @@
+Class,Train,Val
+Bacterial_spot,2826,732
+Early_blight,2455,643
+healthy,3051,805
+Late_blight,3113,792
+Leaf_Mold,2754,739
+powdery_mildew,1004,252
+Septoria_leaf_spot,2882,746
+Spider_mites Two-spotted_spider_mite,1747,435
+Target_Spot,1827,457
+Tomato_mosaic_virus,2153,584
+Tomato_Yellow_Leaf_Curl_Virus,2036,498

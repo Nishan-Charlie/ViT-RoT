@@ -1,0 +1,7 @@
+2025-04-22 20:35:33,361 - INFO - Starting training for convnext_small
+2025-04-22 20:35:33,729 - INFO - Loading pretrained weights from Hugging Face hub (timm/convnext_small.in12k_ft_in1k)
+2025-04-22 20:35:33,733 - INFO - [timm/convnext_small.in12k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-22 20:35:34,127 - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-22 20:35:34,165 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Septoria_leaf_spot\e6d9f6dd-1349-4d66-8bae-7be416b48d15___JR_Sept.L.S 8360.JPG
+2025-04-22 23:29:18,537 - INFO - Predicted class: Leaf_Mold, Probability: 0.9999
+2025-04-22 23:29:18,538 - INFO - Completed training for convnext_small

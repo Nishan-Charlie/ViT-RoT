@@ -1,0 +1,2 @@
+2025-04-24 13:17:28,402 - INFO - Starting training for efficientvit_m7.r224_in1k
+2025-04-24 13:17:28,402 - ERROR - Error loading model efficientvit_m7.r224_in1k: Unknown model (efficientvit_m7)

@@ -1,0 +1,14 @@
+2025-04-21 18:04:11,392 - INFO - Starting training for vit_large_patch16_224
+2025-04-21 18:04:13,251 - INFO - Loading pretrained weights from Hugging Face hub (timm/vit_large_patch16_224.augreg_in21k_ft_in1k)
+2025-04-21 18:04:13,255 - ERROR - Error loading model vit_large_patch16_224: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+2025-04-22 14:05:03,418 - INFO - Starting training for vit_large_patch16_224
+2025-04-22 14:05:05,539 - INFO - Loading pretrained weights from Hugging Face hub (timm/vit_large_patch16_224.augreg_in21k_ft_in1k)
+2025-04-22 14:05:05,555 - ERROR - Error loading model vit_large_patch16_224: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+2025-04-22 14:40:59,254 - INFO - Starting training for vit_large_patch16_224
+2025-04-22 14:41:06,719 - INFO - Loading pretrained weights from Hugging Face hub (timm/vit_large_patch16_224.augreg_in21k_ft_in1k)
+2025-04-22 14:41:06,733 - ERROR - Error loading model vit_large_patch16_224: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+2025-04-22 14:48:16,692 - INFO - Starting training for vit_large_patch16_224
+2025-04-22 14:48:18,580 - INFO - Loading pretrained weights from Hugging Face hub (timm/vit_large_patch16_224.augreg_in21k_ft_in1k)
+2025-04-22 15:05:01,873 - INFO - [timm/vit_large_patch16_224.augreg_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-22 15:05:02,154 - INFO - Missing keys (head.weight, head.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-22 15:05:02,322 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Septoria_leaf_spot\SS_ (926).jpg

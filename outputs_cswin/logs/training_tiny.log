@@ -1,0 +1,68 @@
+2025-04-23 23:40:42,709 - INFO - Starting training for cswin_tiny_224
+2025-04-23 23:40:42,709 - ERROR - Error loading model cswin_tiny_224: Unknown model (cswin_tiny_224)
+2025-04-23 23:43:12,560 - INFO - Starting training for cswin_tiny_224
+2025-04-23 23:43:12,560 - ERROR - Error loading model cswin_tiny_224: Unknown model (cswin_tiny_224)
+2025-04-23 23:43:39,709 - INFO - Starting training for cswin_tiny_224
+2025-04-23 23:43:39,710 - ERROR - Error loading model cswin_tiny_224: Unknown model (cswin_tiny_224)
+2025-04-23 23:46:39,656 - INFO - Starting training for cswin_tiny
+2025-04-23 23:46:39,847 - INFO - Model cswin_tiny: 21.81M parameters
+2025-04-23 23:46:39,848 - INFO - Data processing configuration for current model + dataset:
+2025-04-23 23:46:39,848 - INFO - 	input_size: (3, 224, 224)
+2025-04-23 23:46:39,849 - INFO - 	interpolation: bicubic
+2025-04-23 23:46:39,849 - INFO - 	mean: (0.485, 0.456, 0.406)
+2025-04-23 23:46:39,849 - INFO - 	std: (0.229, 0.224, 0.225)
+2025-04-23 23:46:39,849 - INFO - 	crop_pct: 0.875
+2025-04-23 23:46:39,849 - INFO - 	crop_mode: center
+2025-04-23 23:46:39,849 - INFO - AMP not enabled. Training in float32.
+2025-04-23 23:46:40,504 - INFO - Loaded 25848 training samples with classes: ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_mosaic_virus', 'healthy', 'powdery_mildew']
+2025-04-23 23:46:40,643 - INFO - Loaded 6683 validation samples with classes: ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_mosaic_virus', 'healthy', 'powdery_mildew']
+2025-04-23 23:53:39,016 - INFO - Epoch 0: Train Loss: 2.3210, Train Acc: 17.33%, Train F1: 0.14, Train Prec: 0.15, Val Loss: 2.1631, Val Acc: 26.13%, Val F1: 0.34, Val Prec: 0.74
+2025-04-24 00:00:08,634 - INFO - Epoch 1: Train Loss: 2.0928, Train Acc: 28.95%, Train F1: 0.27, Train Prec: 0.31, Val Loss: 1.4636, Val Acc: 51.34%, Val F1: 0.63, Val Prec: 0.96
+2025-04-24 00:06:37,427 - INFO - Epoch 2: Train Loss: 1.8633, Train Acc: 39.63%, Train F1: 0.38, Train Prec: 0.45, Val Loss: 1.0571, Val Acc: 67.78%, Val F1: 0.77, Val Prec: 0.99
+2025-04-24 00:13:05,360 - INFO - Epoch 3: Train Loss: 1.7178, Train Acc: 46.36%, Train F1: 0.45, Train Prec: 0.52, Val Loss: 0.8604, Val Acc: 73.43%, Val F1: 0.82, Val Prec: 0.99
+2025-04-24 00:19:35,415 - INFO - Epoch 4: Train Loss: 1.6093, Train Acc: 51.52%, Train F1: 0.51, Train Prec: 0.58, Val Loss: 0.7172, Val Acc: 77.42%, Val F1: 0.85, Val Prec: 1.00
+2025-04-24 00:26:03,884 - INFO - Epoch 5: Train Loss: 1.5504, Train Acc: 54.28%, Train F1: 0.54, Train Prec: 0.60, Val Loss: 0.7407, Val Acc: 76.75%, Val F1: 0.84, Val Prec: 0.99
+2025-04-24 00:32:31,573 - INFO - Epoch 6: Train Loss: 1.4599, Train Acc: 58.41%, Train F1: 0.58, Train Prec: 0.65, Val Loss: 0.5830, Val Acc: 82.40%, Val F1: 0.89, Val Prec: 1.00
+2025-04-24 00:39:01,112 - INFO - Epoch 7: Train Loss: 1.3804, Train Acc: 62.31%, Train F1: 0.62, Train Prec: 0.69, Val Loss: 0.5320, Val Acc: 84.03%, Val F1: 0.89, Val Prec: 0.99
+2025-04-24 00:45:27,405 - INFO - Epoch 8: Train Loss: 1.3350, Train Acc: 64.24%, Train F1: 0.64, Train Prec: 0.70, Val Loss: 0.5448, Val Acc: 84.53%, Val F1: 0.90, Val Prec: 0.99
+2025-04-24 00:51:57,351 - INFO - Epoch 9: Train Loss: 1.2950, Train Acc: 66.03%, Train F1: 0.66, Train Prec: 0.72, Val Loss: 0.4780, Val Acc: 86.04%, Val F1: 0.91, Val Prec: 1.00
+2025-04-24 00:58:27,847 - INFO - Epoch 10: Train Loss: 1.2478, Train Acc: 68.05%, Train F1: 0.68, Train Prec: 0.74, Val Loss: 0.4852, Val Acc: 85.75%, Val F1: 0.91, Val Prec: 1.00
+2025-04-24 01:04:55,809 - INFO - Epoch 11: Train Loss: 1.2302, Train Acc: 68.80%, Train F1: 0.69, Train Prec: 0.75, Val Loss: 0.4780, Val Acc: 85.61%, Val F1: 0.91, Val Prec: 1.00
+2025-04-24 01:11:22,692 - INFO - Epoch 12: Train Loss: 1.1985, Train Acc: 70.34%, Train F1: 0.70, Train Prec: 0.76, Val Loss: 0.4386, Val Acc: 87.31%, Val F1: 0.92, Val Prec: 1.00
+2025-04-24 01:17:53,381 - INFO - Epoch 13: Train Loss: 1.1799, Train Acc: 70.97%, Train F1: 0.71, Train Prec: 0.77, Val Loss: 0.4344, Val Acc: 87.83%, Val F1: 0.92, Val Prec: 1.00
+2025-04-24 01:25:46,399 - INFO - Epoch 14: Train Loss: 1.1544, Train Acc: 72.05%, Train F1: 0.72, Train Prec: 0.77, Val Loss: 0.3939, Val Acc: 89.18%, Val F1: 0.93, Val Prec: 1.00
+2025-04-24 01:34:00,918 - INFO - Epoch 15: Train Loss: 1.1383, Train Acc: 72.98%, Train F1: 0.73, Train Prec: 0.78, Val Loss: 0.3530, Val Acc: 90.56%, Val F1: 0.94, Val Prec: 1.00
+2025-04-24 01:42:22,799 - INFO - Epoch 16: Train Loss: 1.1177, Train Acc: 73.74%, Train F1: 0.74, Train Prec: 0.79, Val Loss: 0.3464, Val Acc: 91.22%, Val F1: 0.95, Val Prec: 1.00
+2025-04-24 01:50:44,152 - INFO - Epoch 17: Train Loss: 1.0863, Train Acc: 75.05%, Train F1: 0.75, Train Prec: 0.81, Val Loss: 0.4103, Val Acc: 88.15%, Val F1: 0.93, Val Prec: 1.00
+2025-04-24 01:59:59,924 - INFO - Epoch 18: Train Loss: 1.0832, Train Acc: 75.10%, Train F1: 0.75, Train Prec: 0.80, Val Loss: 0.3916, Val Acc: 89.20%, Val F1: 0.93, Val Prec: 1.00
+2025-04-24 02:12:36,110 - INFO - Epoch 19: Train Loss: 1.0690, Train Acc: 75.72%, Train F1: 0.76, Train Prec: 0.81, Val Loss: 0.3305, Val Acc: 91.52%, Val F1: 0.95, Val Prec: 1.00
+2025-04-24 02:25:02,379 - INFO - Epoch 20: Train Loss: 1.0532, Train Acc: 76.70%, Train F1: 0.77, Train Prec: 0.82, Val Loss: 0.3060, Val Acc: 92.10%, Val F1: 0.95, Val Prec: 1.00
+2025-04-24 02:37:12,623 - INFO - Epoch 21: Train Loss: 1.0368, Train Acc: 77.33%, Train F1: 0.77, Train Prec: 0.82, Val Loss: 0.3190, Val Acc: 91.74%, Val F1: 0.95, Val Prec: 1.00
+2025-04-24 02:49:05,671 - INFO - Epoch 22: Train Loss: 1.0223, Train Acc: 77.78%, Train F1: 0.78, Train Prec: 0.83, Val Loss: 0.3203, Val Acc: 91.16%, Val F1: 0.95, Val Prec: 1.00
+2025-04-24 03:00:53,766 - INFO - Epoch 23: Train Loss: 1.0033, Train Acc: 78.98%, Train F1: 0.79, Train Prec: 0.84, Val Loss: 0.2943, Val Acc: 92.37%, Val F1: 0.95, Val Prec: 1.00
+2025-04-24 03:13:20,513 - INFO - Epoch 24: Train Loss: 0.9988, Train Acc: 78.93%, Train F1: 0.79, Train Prec: 0.83, Val Loss: 0.3008, Val Acc: 92.44%, Val F1: 0.95, Val Prec: 1.00
+2025-04-24 03:25:33,871 - INFO - Epoch 25: Train Loss: 0.9806, Train Acc: 79.79%, Train F1: 0.80, Train Prec: 0.84, Val Loss: 0.2711, Val Acc: 93.66%, Val F1: 0.96, Val Prec: 1.00
+2025-04-24 03:37:26,916 - INFO - Epoch 26: Train Loss: 0.9683, Train Acc: 80.47%, Train F1: 0.80, Train Prec: 0.85, Val Loss: 0.2670, Val Acc: 94.21%, Val F1: 0.97, Val Prec: 1.00
+2025-04-24 03:49:17,953 - INFO - Epoch 27: Train Loss: 0.9559, Train Acc: 80.75%, Train F1: 0.81, Train Prec: 0.85, Val Loss: 0.2627, Val Acc: 93.95%, Val F1: 0.96, Val Prec: 1.00
+2025-04-24 04:01:17,672 - INFO - Epoch 28: Train Loss: 0.9588, Train Acc: 80.62%, Train F1: 0.81, Train Prec: 0.85, Val Loss: 0.2617, Val Acc: 93.78%, Val F1: 0.96, Val Prec: 1.00
+2025-04-24 04:13:32,442 - INFO - Epoch 29: Train Loss: 0.9423, Train Acc: 81.33%, Train F1: 0.81, Train Prec: 0.86, Val Loss: 0.2548, Val Acc: 94.00%, Val F1: 0.96, Val Prec: 1.00
+2025-04-24 04:25:52,423 - INFO - Epoch 30: Train Loss: 0.9267, Train Acc: 82.14%, Train F1: 0.82, Train Prec: 0.86, Val Loss: 0.2736, Val Acc: 93.33%, Val F1: 0.96, Val Prec: 1.00
+2025-04-24 04:37:52,693 - INFO - Epoch 31: Train Loss: 0.9272, Train Acc: 81.88%, Train F1: 0.82, Train Prec: 0.86, Val Loss: 0.2470, Val Acc: 94.64%, Val F1: 0.97, Val Prec: 1.00
+2025-04-24 04:49:50,509 - INFO - Epoch 32: Train Loss: 0.9173, Train Acc: 82.53%, Train F1: 0.83, Train Prec: 0.87, Val Loss: 0.2458, Val Acc: 94.49%, Val F1: 0.97, Val Prec: 1.00
+2025-04-24 05:01:43,481 - INFO - Epoch 33: Train Loss: 0.9016, Train Acc: 83.22%, Train F1: 0.83, Train Prec: 0.87, Val Loss: 0.2331, Val Acc: 95.05%, Val F1: 0.97, Val Prec: 1.00
+2025-04-24 05:13:34,407 - INFO - Epoch 34: Train Loss: 0.8932, Train Acc: 83.50%, Train F1: 0.83, Train Prec: 0.87, Val Loss: 0.2324, Val Acc: 95.06%, Val F1: 0.97, Val Prec: 1.00
+2025-04-24 05:25:37,731 - INFO - Epoch 35: Train Loss: 0.8906, Train Acc: 83.85%, Train F1: 0.84, Train Prec: 0.88, Val Loss: 0.2320, Val Acc: 95.08%, Val F1: 0.97, Val Prec: 1.00
+2025-04-24 05:37:30,523 - INFO - Epoch 36: Train Loss: 0.8752, Train Acc: 84.27%, Train F1: 0.84, Train Prec: 0.88, Val Loss: 0.2203, Val Acc: 95.72%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 05:49:39,756 - INFO - Epoch 37: Train Loss: 0.8731, Train Acc: 84.53%, Train F1: 0.84, Train Prec: 0.88, Val Loss: 0.2257, Val Acc: 95.38%, Val F1: 0.97, Val Prec: 1.00
+2025-04-24 06:01:35,708 - INFO - Epoch 38: Train Loss: 0.8584, Train Acc: 85.16%, Train F1: 0.85, Train Prec: 0.89, Val Loss: 0.2147, Val Acc: 95.94%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 06:13:51,950 - INFO - Epoch 39: Train Loss: 0.8612, Train Acc: 84.84%, Train F1: 0.85, Train Prec: 0.89, Val Loss: 0.2090, Val Acc: 96.03%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 06:25:46,047 - INFO - Epoch 40: Train Loss: 0.8539, Train Acc: 85.22%, Train F1: 0.85, Train Prec: 0.89, Val Loss: 0.2052, Val Acc: 96.32%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 06:38:54,692 - INFO - Epoch 41: Train Loss: 0.8461, Train Acc: 85.67%, Train F1: 0.86, Train Prec: 0.89, Val Loss: 0.2068, Val Acc: 95.97%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 06:53:09,987 - INFO - Epoch 42: Train Loss: 0.8389, Train Acc: 85.99%, Train F1: 0.86, Train Prec: 0.89, Val Loss: 0.2036, Val Acc: 96.15%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 07:07:18,688 - INFO - Epoch 43: Train Loss: 0.8318, Train Acc: 86.37%, Train F1: 0.86, Train Prec: 0.90, Val Loss: 0.1962, Val Acc: 96.38%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 07:19:18,592 - INFO - Epoch 44: Train Loss: 0.8283, Train Acc: 86.42%, Train F1: 0.86, Train Prec: 0.90, Val Loss: 0.2001, Val Acc: 96.32%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 07:31:10,213 - INFO - Epoch 45: Train Loss: 0.8235, Train Acc: 86.58%, Train F1: 0.87, Train Prec: 0.90, Val Loss: 0.1911, Val Acc: 96.72%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 07:43:00,873 - INFO - Epoch 46: Train Loss: 0.8230, Train Acc: 86.68%, Train F1: 0.87, Train Prec: 0.90, Val Loss: 0.1920, Val Acc: 96.51%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 07:55:03,274 - INFO - Epoch 47: Train Loss: 0.8244, Train Acc: 86.71%, Train F1: 0.87, Train Prec: 0.90, Val Loss: 0.1934, Val Acc: 96.63%, Val F1: 0.98, Val Prec: 1.00
+2025-04-24 08:01:27,197 - INFO - *** Best metric: 96.72302857997906 (epoch 45)
+2025-04-24 08:01:27,542 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Target_Spot\1d67d1c7-108d-4090-88c5-519d52963e9a___Com.G_TgS_FL 0980.JPG

@@ -1,0 +1,10 @@
+2025-04-21 18:04:10,661 - INFO - Starting training for vit_small_patch16_224
+2025-04-21 18:04:10,813 - INFO - Loading pretrained weights from Hugging Face hub (timm/vit_small_patch16_224.augreg_in21k_ft_in1k)
+2025-04-21 18:04:10,817 - ERROR - Error loading model vit_small_patch16_224: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+2025-04-22 07:27:19,056 - INFO - Starting training for vit_small_patch16_224
+2025-04-22 07:27:19,220 - INFO - Loading pretrained weights from Hugging Face hub (timm/vit_small_patch16_224.augreg_in21k_ft_in1k)
+2025-04-22 07:27:37,127 - INFO - [timm/vit_small_patch16_224.augreg_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-22 07:27:37,162 - INFO - Missing keys (head.weight, head.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-22 07:27:37,187 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Target_Spot\9f74980b-56b6-4eca-88f8-ca84e3232427___Com.G_TgS_FL 9697.JPG
+2025-04-22 09:51:19,535 - INFO - Predicted class: Septoria_leaf_spot, Probability: 0.9994
+2025-04-22 09:51:19,546 - INFO - Completed training for vit_small_patch16_224

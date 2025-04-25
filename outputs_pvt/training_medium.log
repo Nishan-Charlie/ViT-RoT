@@ -1,0 +1,2 @@
+2025-04-19 19:23:34,295 - INFO - Starting training for pvt_medium
+2025-04-19 19:23:34,295 - ERROR - Error loading model pvt_medium: Unknown model (pvt_medium)

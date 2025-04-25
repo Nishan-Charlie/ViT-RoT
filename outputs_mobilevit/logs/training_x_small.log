@@ -1,0 +1,6 @@
+2025-04-23 21:11:24,947 - INFO - Starting training for apple/mobilevit-x-small
+2025-04-23 21:11:25,060 - ERROR - Error loading model or processor for apple/mobilevit-x-small: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-04-24 01:58:01,816 - INFO - Starting training for apple/mobilevit-x-small
+2025-04-24 01:58:11,509 - INFO - Model apple/mobilevit-x-small: 1.94M parameters
+2025-04-24 09:14:46,490 - INFO - Completed training for apple/mobilevit-x-small

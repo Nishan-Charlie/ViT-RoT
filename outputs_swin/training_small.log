@@ -1,0 +1,7 @@
+2025-04-19 01:24:27,588 - INFO - Starting training for swin_small_patch4_window7_224
+2025-04-19 01:24:27,948 - INFO - Loading pretrained weights from Hugging Face hub (timm/swin_small_patch4_window7_224.ms_in22k_ft_in1k)
+2025-04-19 01:40:37,862 - INFO - [timm/swin_small_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-19 01:40:37,921 - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-19 01:40:37,966 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Septoria_leaf_spot\Gls65_lower.jpg
+2025-04-19 03:30:37,274 - INFO - Predicted class: Leaf_Mold, Probability: 0.9994
+2025-04-19 03:30:37,274 - INFO - Completed training for swin_small_patch4_window7_224

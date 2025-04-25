@@ -1,0 +1,10 @@
+2025-04-22 23:29:18,542 - INFO - Starting training for convnext_base
+2025-04-22 23:29:19,145 - INFO - Loading pretrained weights from Hugging Face hub (timm/convnext_base.fb_in22k_ft_in1k)
+2025-04-22 23:29:20,050 - INFO - [timm/convnext_base.fb_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-22 23:29:20,223 - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-22 23:29:20,277 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Late_blight\ea8996e6-05f4-4792-9704-e2c796b0fbf2___RS_Late.B 5075.JPG
+2025-04-25 11:35:48,124 - INFO - Starting training for convnext_base
+2025-04-25 11:35:48,647 - INFO - Loading pretrained weights from Hugging Face hub (timm/convnext_base.fb_in22k_ft_in1k)
+2025-04-25 11:35:49,223 - INFO - [timm/convnext_base.fb_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-25 11:35:49,652 - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-25 11:35:49,700 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Spider_mites Two-spotted_spider_mite\4daec425-746f-4816-8bd2-dec04d3292ad___Com.G_SpM_FL 9438_flipTB.JPG

@@ -1,0 +1,13 @@
+2025-04-23 22:54:48,049 - INFO - Starting training for efficientvit_b0.r224_in1k
+2025-04-23 22:54:48,064 - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientvit_b0.r224_in1k)
+2025-04-23 22:55:12,288 - INFO - [timm/efficientvit_b0.r224_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-23 22:55:12,301 - INFO - Missing keys (head.classifier.4.weight, head.classifier.4.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-23 22:55:12,302 - ERROR - Error loading model efficientvit_b0.r224_in1k: cannot import name 'calc_model_flops' from 'timm.utils' (C:\Users\nisha\OneDrive\Desktop\CSWin-Transformer\.venv\Lib\site-packages\timm\utils\__init__.py)
+2025-04-23 23:00:43,522 - INFO - Starting training for efficientvit_b0.r224_in1k
+2025-04-23 23:00:43,534 - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientvit_b0.r224_in1k)
+2025-04-23 23:00:44,190 - INFO - [timm/efficientvit_b0.r224_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-23 23:00:44,201 - INFO - Missing keys (head.classifier.4.weight, head.classifier.4.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-23 23:00:44,203 - INFO - Model efficientvit_b0.r224_in1k: 2.14M parameters
+2025-04-23 23:00:44,216 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Target_Spot\1d67d1c7-108d-4090-88c5-519d52963e9a___Com.G_TgS_FL 0980.JPG
+2025-04-24 01:19:39,486 - INFO - Predicted class: Septoria_leaf_spot, Probability: 1.0000
+2025-04-24 01:19:39,487 - INFO - Completed training for efficientvit_b0.r224_in1k

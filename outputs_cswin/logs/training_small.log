@@ -1,0 +1,46 @@
+2025-04-23 23:40:42,710 - INFO - Starting training for cswin_small_224
+2025-04-23 23:40:42,711 - ERROR - Error loading model cswin_small_224: Unknown model (cswin_small_224)
+2025-04-23 23:43:12,562 - INFO - Starting training for cswin_small_224
+2025-04-23 23:43:12,562 - ERROR - Error loading model cswin_small_224: Unknown model (cswin_small_224)
+2025-04-23 23:43:39,711 - INFO - Starting training for cswin_small_224
+2025-04-23 23:43:39,711 - ERROR - Error loading model cswin_small_224: Unknown model (cswin_small_224)
+2025-04-25 15:24:24,975 - INFO - Starting training for cswin_small
+2025-04-25 15:24:25,330 - INFO - Model cswin_small: 62.40M parameters
+2025-04-25 15:24:25,330 - INFO - Data processing configuration for current model + dataset:
+2025-04-25 15:24:25,330 - INFO - 	input_size: (3, 224, 224)
+2025-04-25 15:24:25,330 - INFO - 	interpolation: bicubic
+2025-04-25 15:24:25,330 - INFO - 	mean: (0.485, 0.456, 0.406)
+2025-04-25 15:24:25,331 - INFO - 	std: (0.229, 0.224, 0.225)
+2025-04-25 15:24:25,331 - INFO - 	crop_pct: 0.875
+2025-04-25 15:24:25,331 - INFO - 	crop_mode: center
+2025-04-25 15:24:25,331 - INFO - AMP not enabled. Training in float32.
+2025-04-25 15:24:27,687 - INFO - Loaded 25848 training samples with classes: ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_mosaic_virus', 'healthy', 'powdery_mildew']
+2025-04-25 15:24:27,800 - INFO - Loaded 6683 validation samples with classes: ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_mosaic_virus', 'healthy', 'powdery_mildew']
+2025-04-25 15:25:57,584 - INFO - Starting training for cswin_small
+2025-04-25 15:25:57,948 - INFO - Model cswin_small: 62.40M parameters
+2025-04-25 15:25:57,948 - INFO - Data processing configuration for current model + dataset:
+2025-04-25 15:25:57,948 - INFO - 	input_size: (3, 224, 224)
+2025-04-25 15:25:57,948 - INFO - 	interpolation: bicubic
+2025-04-25 15:25:57,948 - INFO - 	mean: (0.485, 0.456, 0.406)
+2025-04-25 15:25:57,948 - INFO - 	std: (0.229, 0.224, 0.225)
+2025-04-25 15:25:57,948 - INFO - 	crop_pct: 0.875
+2025-04-25 15:25:57,948 - INFO - 	crop_mode: center
+2025-04-25 15:25:57,948 - INFO - AMP not enabled. Training in float32.
+2025-04-25 15:26:00,291 - INFO - Loaded 25848 training samples with classes: ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_mosaic_virus', 'healthy', 'powdery_mildew']
+2025-04-25 15:26:00,404 - INFO - Loaded 6683 validation samples with classes: ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_mosaic_virus', 'healthy', 'powdery_mildew']
+2025-04-25 15:35:23,487 - INFO - Epoch 0: Train Loss: 2.2809, Train Acc: 19.98%, Train F1: 0.17, Train Prec: 0.19, Val Loss: 1.9781, Val Acc: 40.52%, Val F1: 0.52, Val Prec: 0.92
+2025-04-25 15:44:27,600 - INFO - Epoch 1: Train Loss: 2.0267, Train Acc: 32.13%, Train F1: 0.30, Train Prec: 0.35, Val Loss: 1.2877, Val Acc: 56.80%, Val F1: 0.67, Val Prec: 0.93
+2025-04-25 15:53:29,105 - INFO - Epoch 2: Train Loss: 1.8281, Train Acc: 41.23%, Train F1: 0.40, Train Prec: 0.46, Val Loss: 1.0059, Val Acc: 67.89%, Val F1: 0.77, Val Prec: 0.97
+2025-04-25 16:02:30,614 - INFO - Epoch 3: Train Loss: 1.7017, Train Acc: 47.40%, Train F1: 0.46, Train Prec: 0.53, Val Loss: 1.0240, Val Acc: 64.84%, Val F1: 0.75, Val Prec: 0.98
+2025-04-25 16:11:31,715 - INFO - Epoch 4: Train Loss: 1.6165, Train Acc: 51.48%, Train F1: 0.51, Train Prec: 0.57, Val Loss: 0.7574, Val Acc: 76.39%, Val F1: 0.84, Val Prec: 0.99
+2025-04-25 16:20:32,483 - INFO - Epoch 5: Train Loss: 1.5545, Train Acc: 54.35%, Train F1: 0.54, Train Prec: 0.60, Val Loss: 0.8981, Val Acc: 71.43%, Val F1: 0.81, Val Prec: 0.99
+2025-04-25 16:29:37,689 - INFO - Epoch 6: Train Loss: 1.4657, Train Acc: 58.47%, Train F1: 0.58, Train Prec: 0.64, Val Loss: 0.6255, Val Acc: 81.31%, Val F1: 0.88, Val Prec: 0.99
+2025-04-25 16:38:52,671 - INFO - Epoch 7: Train Loss: 1.3934, Train Acc: 61.77%, Train F1: 0.61, Train Prec: 0.68, Val Loss: 0.5830, Val Acc: 81.52%, Val F1: 0.88, Val Prec: 0.99
+2025-04-25 16:48:18,714 - INFO - Epoch 8: Train Loss: 1.3413, Train Acc: 64.02%, Train F1: 0.64, Train Prec: 0.70, Val Loss: 0.5332, Val Acc: 83.56%, Val F1: 0.89, Val Prec: 1.00
+2025-04-25 16:57:24,212 - INFO - Epoch 9: Train Loss: 1.2990, Train Acc: 66.04%, Train F1: 0.66, Train Prec: 0.72, Val Loss: 0.4827, Val Acc: 86.05%, Val F1: 0.91, Val Prec: 1.00
+2025-04-25 17:06:35,629 - INFO - Epoch 10: Train Loss: 1.2675, Train Acc: 67.05%, Train F1: 0.67, Train Prec: 0.73, Val Loss: 0.5039, Val Acc: 84.50%, Val F1: 0.90, Val Prec: 0.99
+2025-04-25 17:15:43,048 - INFO - Epoch 11: Train Loss: 1.2308, Train Acc: 68.80%, Train F1: 0.69, Train Prec: 0.75, Val Loss: 0.4085, Val Acc: 89.09%, Val F1: 0.93, Val Prec: 1.00
+2025-04-25 17:24:54,119 - INFO - Epoch 12: Train Loss: 1.2010, Train Acc: 70.40%, Train F1: 0.70, Train Prec: 0.76, Val Loss: 0.4323, Val Acc: 87.34%, Val F1: 0.92, Val Prec: 1.00
+2025-04-25 17:34:11,879 - INFO - Epoch 13: Train Loss: 1.1810, Train Acc: 70.81%, Train F1: 0.71, Train Prec: 0.77, Val Loss: 0.4406, Val Acc: 87.25%, Val F1: 0.92, Val Prec: 1.00
+2025-04-25 17:39:52,705 - INFO - *** Best metric: 89.09172527308095 (epoch 11)
+2025-04-25 17:39:53,776 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Target_Spot\1d67d1c7-108d-4090-88c5-519d52963e9a___Com.G_TgS_FL 0980.JPG

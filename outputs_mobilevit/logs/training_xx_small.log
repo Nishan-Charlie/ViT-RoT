@@ -1,0 +1,8 @@
+2025-04-23 16:46:17,417 - INFO - Starting training for apple/mobilevit-xx-small
+2025-04-23 16:46:28,671 - INFO - Model apple/mobilevit-xx-small: 0.95M parameters
+2025-04-23 18:59:21,070 - INFO - Starting training for apple/mobilevit-xx-small
+2025-04-23 18:59:24,418 - INFO - Model apple/mobilevit-xx-small: 0.95M parameters
+2025-04-23 21:11:24,943 - INFO - Completed training for apple/mobilevit-xx-small
+2025-04-23 22:42:23,156 - INFO - Starting training for apple/mobilevit-xx-small
+2025-04-23 22:42:24,795 - INFO - Model apple/mobilevit-xx-small: 0.95M parameters
+2025-04-24 01:58:01,811 - INFO - Completed training for apple/mobilevit-xx-small

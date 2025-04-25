@@ -1,0 +1,6 @@
+2025-04-19 19:23:34,276 - INFO - Starting training for pvt_tiny
+2025-04-19 19:23:34,276 - ERROR - Error loading model pvt_tiny: Unknown model (pvt_tiny)
+2025-04-20 10:33:46,721 - INFO - Starting training for Zetatech/pvt-tiny-224
+2025-04-20 10:35:12,679 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\healthy\HL_(36).png
+2025-04-20 22:16:04,566 - INFO - Predicted class: Tomato_mosaic_virus, Probability: 0.9992
+2025-04-20 22:16:04,566 - INFO - Completed training for Zetatech/pvt-tiny-224

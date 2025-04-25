@@ -1,0 +1,7 @@
+2025-04-22 18:49:01,209 - INFO - Starting training for convnext_tiny
+2025-04-22 18:49:01,541 - INFO - Loading pretrained weights from Hugging Face hub (timm/convnext_tiny.in12k_ft_in1k)
+2025-04-22 18:49:12,680 - INFO - [timm/convnext_tiny.in12k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-22 18:49:12,784 - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-22 18:49:12,825 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Tomato_Yellow_Leaf_Curl_Virus\a5cca290-1a53-4848-84f8-4af9a1c9adbe___YLCV_NREC 2318.JPG
+2025-04-22 20:35:33,360 - INFO - Predicted class: Spider_mites Two-spotted_spider_mite, Probability: 1.0000
+2025-04-22 20:35:33,360 - INFO - Completed training for convnext_tiny

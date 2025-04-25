@@ -1,0 +1,2 @@
+2025-04-23 23:43:39,715 - INFO - Starting training for cswin_large_224
+2025-04-23 23:43:39,715 - ERROR - Error loading model cswin_large_224: Unknown model (cswin_large_224)

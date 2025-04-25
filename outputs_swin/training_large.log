@@ -1,0 +1,5 @@
+2025-04-19 13:46:33,427 - INFO - Starting training for swin_large_patch4_window7_224
+2025-04-19 13:46:34,554 - INFO - Loading pretrained weights from Hugging Face hub (timm/swin_large_patch4_window7_224.ms_in22k_ft_in1k)
+2025-04-19 13:47:35,762 - INFO - [timm/swin_large_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-19 13:47:35,873 - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-19 13:47:35,953 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Late_blight\69fff432-3c80-4202-8e8a-7fed08ec0baa___RS_Late.B 6825.JPG

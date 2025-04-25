@@ -1,0 +1,10 @@
+2025-04-23 22:58:29,078 - INFO - Starting training for efficientvit_m5.r224_in1k
+2025-04-23 22:58:29,140 - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientvit_m5.r224_in1k)
+2025-04-24 06:09:39,342 - INFO - Starting training for efficientvit_m5.r224_in1k
+2025-04-24 06:09:39,421 - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientvit_m5.r224_in1k)
+2025-04-24 06:09:56,461 - INFO - [timm/efficientvit_m5.r224_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-24 06:09:56,520 - INFO - Missing keys (head.linear.weight, head.linear.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-24 06:09:56,526 - INFO - Model efficientvit_m5.r224_in1k: 12.09M parameters
+2025-04-24 06:09:56,540 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Leaf_Mold\50a47a28-bbe5-43fb-a2b9-f13c3805de0c___Crnl_L.Mold 6572.JPG
+2025-04-24 13:17:28,400 - INFO - Predicted class: Late_blight, Probability: 0.9974
+2025-04-24 13:17:28,401 - INFO - Completed training for efficientvit_m5.r224_in1k

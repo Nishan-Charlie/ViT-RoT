@@ -1,0 +1,4 @@
+2025-04-19 19:23:34,306 - INFO - Starting training for pvt_large
+2025-04-19 19:23:34,307 - ERROR - Error loading model pvt_large: Unknown model (pvt_large)
+2025-04-21 01:59:02,521 - INFO - Starting training for Zetatech/pvt-large-224
+2025-04-21 01:59:42,454 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Septoria_leaf_spot\ef2589f7-5993-4457-a981-9bd6fc0d8499___Matt.S_CG 2638.JPG

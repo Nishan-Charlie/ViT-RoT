@@ -1,0 +1,6 @@
+2025-04-23 23:40:42,712 - INFO - Starting training for cswin_base_224
+2025-04-23 23:40:42,713 - ERROR - Error loading model cswin_base_224: Unknown model (cswin_base_224)
+2025-04-23 23:43:12,563 - INFO - Starting training for cswin_base_224
+2025-04-23 23:43:12,563 - ERROR - Error loading model cswin_base_224: Unknown model (cswin_base_224)
+2025-04-23 23:43:39,713 - INFO - Starting training for cswin_base_224
+2025-04-23 23:43:39,713 - ERROR - Error loading model cswin_base_224: Unknown model (cswin_base_224)

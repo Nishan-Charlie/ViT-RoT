@@ -1,0 +1,6 @@
+2025-04-19 19:23:34,292 - INFO - Starting training for pvt_small
+2025-04-19 19:23:34,292 - ERROR - Error loading model pvt_small: Unknown model (pvt_small)
+2025-04-20 22:16:04,572 - INFO - Starting training for Zetatech/pvt-small-224
+2025-04-20 22:17:18,448 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Leaf_Mold\cb88247d-9a2a-4cd9-888a-76d799436f10___Crnl_L.Mold 7125_flipTB.JPG
+2025-04-20 23:26:59,908 - INFO - Predicted class: Late_blight, Probability: 0.9998
+2025-04-20 23:26:59,908 - INFO - Completed training for Zetatech/pvt-small-224

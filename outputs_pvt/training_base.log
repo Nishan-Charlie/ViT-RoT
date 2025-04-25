@@ -1,0 +1,4 @@
+2025-04-20 23:26:59,910 - INFO - Starting training for Zetatech/pvt-medium-224
+2025-04-20 23:27:40,797 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Tomato_mosaic_virus\MV_ (585).jpg
+2025-04-21 01:59:02,520 - INFO - Predicted class: Target_Spot, Probability: 0.9999
+2025-04-21 01:59:02,521 - INFO - Completed training for Zetatech/pvt-medium-224

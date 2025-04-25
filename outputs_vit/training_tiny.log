@@ -1,0 +1,12 @@
+2025-04-19 18:23:35,450 - INFO - Starting training for vit_tiny_patch16_224
+2025-04-19 18:23:35,555 - INFO - Loading pretrained weights from Hugging Face hub (timm/vit_tiny_patch16_224.augreg_in21k_ft_in1k)
+2025-04-19 18:23:39,719 - INFO - [timm/vit_tiny_patch16_224.augreg_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-19 18:23:39,752 - INFO - Missing keys (head.weight, head.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-19 18:23:39,784 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Tomato_mosaic_virus\1ccfd473-6b3d-47a9-897b-0653d7683d75___PSU_CG 2163_180deg.JPG
+2025-04-21 17:16:45,225 - INFO - Starting training for vit_tiny_patch16_224
+2025-04-21 17:16:45,285 - INFO - Loading pretrained weights from Hugging Face hub (timm/vit_tiny_patch16_224.augreg_in21k_ft_in1k)
+2025-04-21 17:16:45,290 - INFO - [timm/vit_tiny_patch16_224.augreg_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-04-21 17:16:45,325 - INFO - Missing keys (head.weight, head.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-04-21 17:16:45,338 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset/val\Leaf_Mold\Blm29_change_90.jpg
+2025-04-21 18:04:10,660 - INFO - Predicted class: Late_blight, Probability: 0.9999
+2025-04-21 18:04:10,660 - INFO - Completed training for vit_tiny_patch16_224

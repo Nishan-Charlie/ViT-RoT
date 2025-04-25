@@ -1,0 +1,40 @@
+2025-04-23 19:41:17,402 - INFO - Starting model evaluation
+2025-04-23 19:41:17,422 - ERROR - Test dataset validation failed: Directory C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset\test does not exist
+2025-04-23 19:42:13,843 - INFO - Starting model evaluation
+2025-04-23 19:42:14,521 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-04-23 19:42:14,714 - WARNING - Model weights not found at outputs_swin/models/swin_tiny_best.pth, skipping
+2025-04-23 19:42:14,714 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-04-23 19:42:15,059 - WARNING - Model weights not found at outputs_swin/models/swin_small_best.pth, skipping
+2025-04-23 19:42:15,059 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-04-23 19:42:15,604 - WARNING - Model weights not found at outputs_swin/models/swin_base_best.pth, skipping
+2025-04-23 19:42:15,604 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-04-23 19:42:15,650 - WARNING - Model weights not found at outputs_vit/models/vit_tiny_best.pth, skipping
+2025-04-23 19:42:15,650 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-04-23 19:42:15,775 - WARNING - Model weights not found at outputs_vit/models/vit_small_best.pth, skipping
+2025-04-23 19:42:15,776 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-04-23 19:42:16,266 - WARNING - Model weights not found at outputs_vit/models/vit_base_best.pth, skipping
+2025-04-23 19:42:16,266 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-04-23 19:42:16,430 - WARNING - Model weights not found at outputs_convnext/models/convnext_tiny_best.pth, skipping
+2025-04-23 19:42:16,431 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-04-23 19:42:16,725 - WARNING - Model weights not found at outputs_convnext/models/convnext_small_best.pth, skipping
+2025-04-23 19:42:16,729 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_all_models.csv
+2025-04-23 19:46:02,944 - INFO - Starting model evaluation
+2025-04-23 19:46:03,648 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-04-23 19:46:40,189 - INFO - Swin-tiny: Accuracy: 98.67%, Precision: 0.9867, Recall: 0.9867, F1: 0.9867
+2025-04-23 19:46:40,189 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-04-23 19:47:31,224 - INFO - Swin-small: Accuracy: 98.76%, Precision: 0.9876, Recall: 0.9876, F1: 0.9876
+2025-04-23 19:47:31,224 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-04-23 19:48:38,985 - INFO - Swin-base: Accuracy: 98.70%, Precision: 0.9870, Recall: 0.9870, F1: 0.9870
+2025-04-23 19:48:38,985 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-04-23 19:49:01,157 - INFO - ViT-tiny: Accuracy: 90.80%, Precision: 0.9251, Recall: 0.9080, F1: 0.9045
+2025-04-23 19:49:01,157 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-04-23 19:49:31,074 - INFO - ViT-small: Accuracy: 94.55%, Precision: 0.9510, Recall: 0.9455, F1: 0.9453
+2025-04-23 19:49:31,075 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-04-23 19:50:29,827 - INFO - ViT-base: Accuracy: 96.03%, Precision: 0.9624, Recall: 0.9603, F1: 0.9604
+2025-04-23 19:50:29,827 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-04-23 19:51:01,389 - INFO - ConvNeXt-tiny: Accuracy: 98.82%, Precision: 0.9883, Recall: 0.9882, F1: 0.9882
+2025-04-23 19:51:01,389 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-04-23 19:51:44,979 - INFO - ConvNeXt-small: Accuracy: 98.79%, Precision: 0.9879, Recall: 0.9879, F1: 0.9879
+2025-04-23 19:51:44,981 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_all_models.csv
+2025-04-24 10:10:48,361 - INFO - Starting model evaluation
+2025-04-24 10:10:49,034 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
