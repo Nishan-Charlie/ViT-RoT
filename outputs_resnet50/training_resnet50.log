@@ -1,0 +1,5 @@
+2025-05-27 16:27:53,680 - INFO - Starting training for ResNet-50
+2025-05-27 16:27:53,951 - INFO - Model ResNet-50: 23.53M parameters
+2025-05-27 16:27:53,966 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/ViT-RoT/dataset/tomato_leaf_dataset/val\Target_Spot\1d67d1c7-108d-4090-88c5-519d52963e9a___Com.G_TgS_FL 0980.JPG
+2025-05-27 17:34:18,282 - INFO - Predicted class: Septoria_leaf_spot, Probability: 1.0000
+2025-05-27 17:34:18,283 - INFO - Completed training for ResNet-50

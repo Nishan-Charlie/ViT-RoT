@@ -1,0 +1,17 @@
+model_variant,models,variant,true_label,predicted_label,correct,inference_time
+CCT-small,CCT,small,Target_Spot,Septoria_leaf_spot,False,0.17748785018920898
+CCT-base,CCT,base,Target_Spot,Septoria_leaf_spot,False,0.026623964309692383
+EfficientViT-b0,EfficientViT,b0,Target_Spot,Septoria_leaf_spot,False,0.06357312202453613
+EfficientViT-b2,EfficientViT,b2,Target_Spot,Septoria_leaf_spot,False,0.04081082344055176
+EfficientViT-m5,EfficientViT,m5,Target_Spot,Septoria_leaf_spot,False,0.06433582305908203
+MobileViT-xx_small,MobileViT,xx_small,Target_Spot,Leaf_Mold,False,0.05709362030029297
+MobileViT-x_small,MobileViT,x_small,Target_Spot,Tomato_mosaic_virus,False,0.03836178779602051
+MobileViT-small,MobileViT,small,Target_Spot,Tomato_mosaic_virus,False,0.03365325927734375
+Swin-tiny,Swin,tiny,Target_Spot,Septoria_leaf_spot,False,0.01324605941772461
+Swin-small,Swin,small,Target_Spot,Septoria_leaf_spot,False,0.018901824951171875
+Swin-base,Swin,base,Target_Spot,Septoria_leaf_spot,False,0.03908991813659668
+ViT-tiny,ViT,tiny,Target_Spot,Septoria_leaf_spot,False,0.008542299270629883
+ViT-small,ViT,small,Target_Spot,Septoria_leaf_spot,False,0.0060002803802490234
+ViT-base,ViT,base,Target_Spot,Septoria_leaf_spot,False,0.005010128021240234
+ConvNeXt-tiny,ConvNeXt,tiny,Target_Spot,Septoria_leaf_spot,False,0.017006635665893555
+ConvNeXt-small,ConvNeXt,small,Target_Spot,Septoria_leaf_spot,False,0.014990568161010742

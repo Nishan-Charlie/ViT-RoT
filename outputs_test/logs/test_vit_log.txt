@@ -1,0 +1,61 @@
+2025-04-26 11:09:43,090 - INFO - Starting ViT models evaluation
+2025-04-26 11:09:43,117 - ERROR - Test dataset validation failed: Directory C:/Users/nisha/OneDrive/Desktop/CSWin-Transformer/dataset/tomato_leaf_dataset\val does not exist
+2025-04-26 11:10:04,530 - INFO - Starting ViT models evaluation
+2025-04-26 11:10:05,261 - INFO - Evaluating ViT-large (vit_large_patch16_224)
+2025-04-26 11:10:06,974 - WARNING - Model weights not found at outputs_vit/vit_large_best.pth, skipping
+2025-04-26 11:10:06,976 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_vit.csv
+2025-04-26 11:13:03,917 - INFO - Starting ViT models evaluation
+2025-04-26 11:13:03,949 - INFO - Validating test dataset...
+2025-04-26 11:13:03,950 - INFO - test/Bacterial_spot: 732 images found
+2025-04-26 11:13:04,015 - INFO - test/Early_blight: 643 images found
+2025-04-26 11:13:04,065 - INFO - test/healthy: 805 images found
+2025-04-26 11:13:04,177 - INFO - test/Late_blight: 792 images found
+2025-04-26 11:13:04,267 - INFO - test/Leaf_Mold: 739 images found
+2025-04-26 11:13:04,325 - INFO - test/powdery_mildew: 252 images found
+2025-04-26 11:13:04,346 - INFO - test/Septoria_leaf_spot: 746 images found
+2025-04-26 11:13:04,413 - INFO - test/Spider_mites Two-spotted_spider_mite: 435 images found
+2025-04-26 11:13:04,446 - INFO - test/Target_Spot: 457 images found
+2025-04-26 11:13:04,482 - INFO - test/Tomato_mosaic_virus: 584 images found
+2025-04-26 11:13:04,531 - INFO - test/Tomato_Yellow_Leaf_Curl_Virus: 498 images found
+2025-04-26 11:13:04,572 - INFO - Test dataset validation complete: 6683 images found.
+2025-04-26 11:13:04,572 - INFO - Evaluating ViT-large (vit_large_patch16_224)
+2025-04-26 11:13:06,237 - WARNING - Model weights not found at outputs_vit/vit_large_best.pth, skipping
+2025-04-26 11:13:06,238 - ERROR - No metrics collected, CSV will be empty
+2025-04-26 11:13:06,240 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_vit.csv
+2025-04-26 11:14:39,605 - INFO - Starting ViT models evaluation
+2025-04-26 11:14:39,632 - INFO - Validating test dataset...
+2025-04-26 11:14:39,633 - INFO - test/Bacterial_spot: 732 images found
+2025-04-26 11:14:39,697 - INFO - test/Early_blight: 643 images found
+2025-04-26 11:14:39,745 - INFO - test/healthy: 805 images found
+2025-04-26 11:14:39,858 - INFO - test/Late_blight: 792 images found
+2025-04-26 11:14:39,944 - INFO - test/Leaf_Mold: 739 images found
+2025-04-26 11:14:40,000 - INFO - test/powdery_mildew: 252 images found
+2025-04-26 11:14:40,021 - INFO - test/Septoria_leaf_spot: 746 images found
+2025-04-26 11:14:40,080 - INFO - test/Spider_mites Two-spotted_spider_mite: 435 images found
+2025-04-26 11:14:40,114 - INFO - test/Target_Spot: 457 images found
+2025-04-26 11:14:40,149 - INFO - test/Tomato_mosaic_virus: 584 images found
+2025-04-26 11:14:40,198 - INFO - test/Tomato_Yellow_Leaf_Curl_Virus: 498 images found
+2025-04-26 11:14:40,238 - INFO - Test dataset validation complete: 6683 images found.
+2025-04-26 11:14:40,239 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-04-26 11:14:40,289 - INFO - Loading model weights from outputs_vit/vit_tiny_best.pth
+2025-04-26 11:14:40,422 - INFO - Test dataset size: 6683 samples
+2025-04-26 11:14:40,422 - INFO - Starting evaluation for ViT-tiny
+2025-04-26 11:14:59,422 - INFO - Saved confusion matrix plot to outputs_test\plots/confusion_matrix_vit_tiny.png
+2025-04-26 11:14:59,427 - INFO - Saved confusion matrix to outputs_test\summaries\confusion_matrix_vit_tiny.csv
+2025-04-26 11:14:59,427 - INFO - Metrics for ViT-tiny: Accuracy: 98.47%, Precision: 0.9848, Recall: 0.9847, F1: 0.9847
+2025-04-26 11:14:59,427 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-04-26 11:14:59,560 - INFO - Loading model weights from outputs_vit/vit_small_best.pth
+2025-04-26 11:14:59,663 - INFO - Test dataset size: 6683 samples
+2025-04-26 11:14:59,664 - INFO - Starting evaluation for ViT-small
+2025-04-26 11:15:21,781 - INFO - Saved confusion matrix plot to outputs_test\plots/confusion_matrix_vit_small.png
+2025-04-26 11:15:21,783 - INFO - Saved confusion matrix to outputs_test\summaries\confusion_matrix_vit_small.csv
+2025-04-26 11:15:21,784 - INFO - Metrics for ViT-small: Accuracy: 98.79%, Precision: 0.9879, Recall: 0.9879, F1: 0.9879
+2025-04-26 11:15:21,808 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-04-26 11:15:22,325 - INFO - Loading model weights from outputs_vit/vit_base_best.pth
+2025-04-26 11:15:22,576 - INFO - Test dataset size: 6683 samples
+2025-04-26 11:15:22,576 - INFO - Starting evaluation for ViT-base
+2025-04-26 11:16:04,206 - INFO - Saved confusion matrix plot to outputs_test\plots/confusion_matrix_vit_base.png
+2025-04-26 11:16:04,208 - INFO - Saved confusion matrix to outputs_test\summaries\confusion_matrix_vit_base.csv
+2025-04-26 11:16:04,208 - INFO - Metrics for ViT-base: Accuracy: 98.74%, Precision: 0.9875, Recall: 0.9874, F1: 0.9874
+2025-04-26 11:16:04,208 - INFO - Collected metrics for 3 models
+2025-04-26 11:16:04,209 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_vit.csv

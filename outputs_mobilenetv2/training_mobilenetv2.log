@@ -1,0 +1,5 @@
+2025-05-27 20:07:49,663 - INFO - Starting training for MobileNetV2
+2025-05-27 20:11:17,716 - INFO - Model MobileNetV2: 2.24M parameters
+2025-05-27 20:11:17,731 - INFO - Selected test image: C:/Users/nisha/OneDrive/Desktop/ViT-RoT/dataset/tomato_leaf_dataset/val\Target_Spot\1d67d1c7-108d-4090-88c5-519d52963e9a___Com.G_TgS_FL 0980.JPG
+2025-05-27 22:01:59,888 - INFO - Predicted class: Septoria_leaf_spot, Probability: 1.0000
+2025-05-27 22:01:59,889 - INFO - Completed training for MobileNetV2

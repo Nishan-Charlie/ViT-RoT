@@ -233,3 +233,236 @@
 2025-04-25 19:21:12,605 - INFO - Evaluating ConvNeXt-small (convnext_small)
 2025-04-25 19:21:49,464 - INFO - ConvNeXt-small: Accuracy: 98.79%, Precision: 0.9879, Recall: 0.9879, F1: 0.9879
 2025-04-25 19:21:49,466 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_all_models.csv
+2025-04-26 10:34:25,353 - INFO - Starting models evaluation
+2025-04-26 10:34:27,417 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-04-26 10:35:28,921 - INFO - MobileViT-xx_small: Accuracy: 12.99%, Precision: 0.1114, Recall: 0.1299, F1: 0.0707
+2025-04-26 10:35:28,921 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-04-26 10:36:23,982 - INFO - MobileViT-x_small: Accuracy: 13.83%, Precision: 0.1141, Recall: 0.1383, F1: 0.0950
+2025-04-26 10:36:23,982 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-04-26 10:37:20,611 - INFO - MobileViT-small: Accuracy: 10.92%, Precision: 0.0881, Recall: 0.1092, F1: 0.0566
+2025-04-26 10:37:20,612 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_mobile_models.csv
+2025-05-26 23:14:33,252 - INFO - Starting single image evaluation
+2025-05-26 23:14:39,466 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-05-26 23:14:40,415 - INFO - CCT-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.5932s
+2025-05-26 23:14:40,415 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-05-26 23:14:40,853 - INFO - CCT-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0267s
+2025-05-26 23:14:40,853 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-05-26 23:14:41,101 - INFO - EfficientViT-b0: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.1225s
+2025-05-26 23:14:41,101 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-05-26 23:14:41,411 - INFO - EfficientViT-b2: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0411s
+2025-05-26 23:14:41,411 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-05-26 23:14:41,968 - INFO - EfficientViT-m5: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.1122s
+2025-05-26 23:14:41,968 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-26 23:14:43,938 - INFO - MobileViT-xx_small: True Label: Target_Spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0808s
+2025-05-26 23:14:43,938 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-26 23:14:46,619 - INFO - MobileViT-x_small: True Label: Target_Spot, Predicted Label: Tomato_mosaic_virus, Correct: False, Inference Time: 0.1351s
+2025-05-26 23:14:46,619 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-05-26 23:14:48,821 - INFO - MobileViT-small: True Label: Target_Spot, Predicted Label: Tomato_mosaic_virus, Correct: False, Inference Time: 0.1179s
+2025-05-26 23:14:48,822 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-05-26 23:14:50,186 - INFO - Swin-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0609s
+2025-05-26 23:14:50,186 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-05-26 23:14:52,600 - INFO - Swin-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.1668s
+2025-05-26 23:14:52,600 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-05-26 23:14:55,074 - INFO - Swin-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0704s
+2025-05-26 23:14:55,076 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-05-26 23:14:55,487 - INFO - ViT-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0404s
+2025-05-26 23:14:55,488 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-05-26 23:14:56,006 - INFO - ViT-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0065s
+2025-05-26 23:14:56,008 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-05-26 23:14:57,494 - INFO - ViT-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0070s
+2025-05-26 23:14:57,495 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-05-26 23:14:57,867 - INFO - ConvNeXt-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0199s
+2025-05-26 23:14:57,868 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-05-26 23:14:58,531 - INFO - ConvNeXt-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0100s
+2025-05-26 23:14:58,541 - INFO - Saved test metrics to outputs_test\summaries\single_image_metrics.csv
+2025-05-26 23:16:38,163 - INFO - Starting single image evaluation
+2025-05-26 23:16:42,087 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-05-26 23:16:42,441 - INFO - CCT-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.1784s
+2025-05-26 23:16:42,442 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-05-26 23:16:42,807 - INFO - CCT-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0180s
+2025-05-26 23:16:42,807 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-05-26 23:16:42,957 - INFO - EfficientViT-b0: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0725s
+2025-05-26 23:16:42,958 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-05-26 23:16:43,280 - INFO - EfficientViT-b2: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0545s
+2025-05-26 23:16:43,280 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-05-26 23:16:43,784 - INFO - EfficientViT-m5: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0781s
+2025-05-26 23:16:43,784 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-26 23:16:45,861 - INFO - MobileViT-xx_small: True Label: Target_Spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0641s
+2025-05-26 23:16:45,861 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-26 23:16:47,579 - INFO - MobileViT-x_small: True Label: Target_Spot, Predicted Label: Tomato_mosaic_virus, Correct: False, Inference Time: 0.0415s
+2025-05-26 23:16:47,579 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-05-26 23:16:49,200 - INFO - MobileViT-small: True Label: Target_Spot, Predicted Label: Tomato_mosaic_virus, Correct: False, Inference Time: 0.0375s
+2025-05-26 23:16:49,200 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-05-26 23:16:49,594 - INFO - Swin-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0225s
+2025-05-26 23:16:49,595 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-05-26 23:16:50,371 - INFO - Swin-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0380s
+2025-05-26 23:16:50,372 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-05-26 23:16:51,635 - INFO - Swin-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0360s
+2025-05-26 23:16:51,635 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-05-26 23:16:51,804 - INFO - ViT-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0113s
+2025-05-26 23:16:51,804 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-05-26 23:16:52,135 - INFO - ViT-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0070s
+2025-05-26 23:16:52,136 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-05-26 23:16:53,207 - INFO - ViT-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0066s
+2025-05-26 23:16:53,208 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-05-26 23:16:53,649 - INFO - ConvNeXt-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0267s
+2025-05-26 23:16:53,650 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-05-26 23:16:54,358 - INFO - ConvNeXt-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0110s
+2025-05-26 23:16:54,365 - INFO - Saved test metrics to outputs_test\summaries\single_image_metrics.csv
+2025-05-26 23:19:08,077 - INFO - Starting single image evaluation
+2025-05-26 23:19:12,730 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-05-26 23:19:13,123 - INFO - CCT-small: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.1820s
+2025-05-26 23:19:13,123 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-05-26 23:19:13,537 - INFO - CCT-base: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0214s
+2025-05-26 23:19:13,538 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-05-26 23:19:13,723 - INFO - EfficientViT-b0: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0691s
+2025-05-26 23:19:13,723 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-05-26 23:19:14,051 - INFO - EfficientViT-b2: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0443s
+2025-05-26 23:19:14,051 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-05-26 23:19:14,521 - INFO - EfficientViT-m5: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0622s
+2025-05-26 23:19:14,522 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-26 23:19:16,608 - INFO - MobileViT-xx_small: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0693s
+2025-05-26 23:19:16,608 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-26 23:19:18,381 - INFO - MobileViT-x_small: True Label: Septoria_leaf_spot, Predicted Label: Early_blight, Correct: False, Inference Time: 0.0339s
+2025-05-26 23:19:18,382 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-05-26 23:19:20,076 - INFO - MobileViT-small: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0334s
+2025-05-26 23:19:20,076 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-05-26 23:19:20,485 - INFO - Swin-tiny: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0150s
+2025-05-26 23:19:20,485 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-05-26 23:19:21,665 - INFO - Swin-small: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0375s
+2025-05-26 23:19:21,665 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-05-26 23:19:23,448 - INFO - Swin-base: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0318s
+2025-05-26 23:19:23,448 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-05-26 23:19:23,619 - INFO - ViT-tiny: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0075s
+2025-05-26 23:19:23,619 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-05-26 23:19:23,936 - INFO - ViT-small: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0060s
+2025-05-26 23:19:23,936 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-05-26 23:19:24,959 - INFO - ViT-base: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0080s
+2025-05-26 23:19:24,960 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-05-26 23:19:25,379 - INFO - ConvNeXt-tiny: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0180s
+2025-05-26 23:19:25,379 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-05-26 23:19:26,113 - INFO - ConvNeXt-small: True Label: Septoria_leaf_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0130s
+2025-05-26 23:19:26,128 - INFO - Saved test metrics to outputs_test\summaries\single_image_metrics.csv
+2025-05-26 23:24:57,768 - INFO - Starting single image evaluation
+2025-05-26 23:24:59,027 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-05-26 23:24:59,702 - INFO - CCT-small: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.2189s
+2025-05-26 23:24:59,702 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-05-26 23:25:00,072 - INFO - CCT-base: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0269s
+2025-05-26 23:25:00,072 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-05-26 23:25:00,205 - INFO - EfficientViT-b0: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0724s
+2025-05-26 23:25:00,205 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-05-26 23:25:00,478 - INFO - EfficientViT-b2: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0342s
+2025-05-26 23:25:00,478 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-05-26 23:25:00,902 - INFO - EfficientViT-m5: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0654s
+2025-05-26 23:25:00,902 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-26 23:25:01,121 - INFO - MobileViT-xx_small: True Label: Bacterial_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0549s
+2025-05-26 23:25:01,121 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-26 23:25:01,335 - INFO - MobileViT-x_small: True Label: Bacterial_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0321s
+2025-05-26 23:25:01,335 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-05-26 23:25:01,564 - INFO - MobileViT-small: True Label: Bacterial_spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0300s
+2025-05-26 23:25:01,565 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-05-26 23:25:01,950 - INFO - Swin-tiny: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0170s
+2025-05-26 23:25:01,950 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-05-26 23:25:02,592 - INFO - Swin-small: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0193s
+2025-05-26 23:25:02,592 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-05-26 23:25:03,585 - INFO - Swin-base: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0213s
+2025-05-26 23:25:03,586 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-05-26 23:25:03,712 - INFO - ViT-tiny: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0070s
+2025-05-26 23:25:03,712 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-05-26 23:25:04,005 - INFO - ViT-small: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0065s
+2025-05-26 23:25:04,005 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-05-26 23:25:04,960 - INFO - ViT-base: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0060s
+2025-05-26 23:25:04,960 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-05-26 23:25:05,352 - INFO - ConvNeXt-tiny: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0174s
+2025-05-26 23:25:05,352 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-05-26 23:25:05,988 - INFO - ConvNeXt-small: True Label: Bacterial_spot, Predicted Label: Bacterial_spot, Correct: True, Inference Time: 0.0110s
+2025-05-26 23:25:05,992 - INFO - Saved test metrics to outputs_test\summaries\single_image_metrics.csv
+2025-05-26 23:35:44,481 - INFO - Starting single image evaluation
+2025-05-26 23:35:46,936 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-05-26 23:35:47,988 - INFO - CCT-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.1775s
+2025-05-26 23:35:47,989 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-05-26 23:35:48,365 - INFO - CCT-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0266s
+2025-05-26 23:35:48,365 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-05-26 23:35:48,506 - INFO - EfficientViT-b0: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0636s
+2025-05-26 23:35:48,507 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-05-26 23:35:48,793 - INFO - EfficientViT-b2: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0408s
+2025-05-26 23:35:48,793 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-05-26 23:35:49,236 - INFO - EfficientViT-m5: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0643s
+2025-05-26 23:35:49,237 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-26 23:35:49,488 - INFO - MobileViT-xx_small: True Label: Target_Spot, Predicted Label: Leaf_Mold, Correct: False, Inference Time: 0.0571s
+2025-05-26 23:35:49,489 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-26 23:35:49,706 - INFO - MobileViT-x_small: True Label: Target_Spot, Predicted Label: Tomato_mosaic_virus, Correct: False, Inference Time: 0.0384s
+2025-05-26 23:35:49,707 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-05-26 23:35:49,926 - INFO - MobileViT-small: True Label: Target_Spot, Predicted Label: Tomato_mosaic_virus, Correct: False, Inference Time: 0.0337s
+2025-05-26 23:35:49,926 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-05-26 23:35:50,308 - INFO - Swin-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0132s
+2025-05-26 23:35:50,308 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-05-26 23:35:51,004 - INFO - Swin-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0189s
+2025-05-26 23:35:51,004 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-05-26 23:35:52,172 - INFO - Swin-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0391s
+2025-05-26 23:35:52,172 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-05-26 23:35:52,300 - INFO - ViT-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0085s
+2025-05-26 23:35:52,301 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-05-26 23:35:52,606 - INFO - ViT-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0060s
+2025-05-26 23:35:52,606 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-05-26 23:35:53,579 - INFO - ViT-base: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0050s
+2025-05-26 23:35:53,579 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-05-26 23:35:53,968 - INFO - ConvNeXt-tiny: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0170s
+2025-05-26 23:35:53,968 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-05-26 23:35:54,654 - INFO - ConvNeXt-small: True Label: Target_Spot, Predicted Label: Septoria_leaf_spot, Correct: False, Inference Time: 0.0150s
+2025-05-26 23:35:54,657 - INFO - Saved test metrics to outputs_test\summaries\single_image_metrics.csv
+2025-05-26 23:41:32,104 - INFO - Starting inference time evaluation for 300 images
+2025-05-26 23:41:34,682 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-05-26 23:41:37,690 - INFO - CCT-small: Mean Inference Time: 0.0055s
+2025-05-26 23:41:37,691 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-05-26 23:41:41,775 - INFO - CCT-base: Mean Inference Time: 0.0088s
+2025-05-26 23:41:41,776 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-05-26 23:41:46,036 - INFO - EfficientViT-b0: Mean Inference Time: 0.0087s
+2025-05-26 23:41:46,037 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-05-26 23:41:53,189 - INFO - EfficientViT-b2: Mean Inference Time: 0.0173s
+2025-05-26 23:41:53,190 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-05-26 23:42:05,671 - INFO - EfficientViT-m5: Mean Inference Time: 0.0324s
+2025-05-26 23:42:05,671 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-26 23:42:27,670 - INFO - MobileViT-xx_small: Mean Inference Time: 0.0485s
+2025-05-26 23:42:27,670 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-26 23:42:46,444 - INFO - MobileViT-x_small: Mean Inference Time: 0.0417s
+2025-05-26 23:42:46,444 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-05-26 23:43:02,551 - INFO - MobileViT-small: Mean Inference Time: 0.0375s
+2025-05-26 23:43:02,553 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-05-26 23:43:16,465 - INFO - Swin-tiny: Mean Inference Time: 0.0325s
+2025-05-26 23:43:16,466 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-05-26 23:43:46,103 - INFO - Starting inference time evaluation for all images
+2025-05-26 23:43:48,603 - INFO - Total images to process: 6683
+2025-05-26 23:43:48,603 - INFO - Evaluating CCT-small (cct_7_7x2_224)
+2025-05-26 23:44:49,641 - INFO - CCT-small: Total Inference Time: 35.3845s, Mean Inference Time: 0.0053s (6683 images processed)
+2025-05-26 23:44:49,641 - INFO - Evaluating CCT-base (cct_14_7x2_224)
+2025-05-26 23:46:11,333 - INFO - CCT-base: Total Inference Time: 56.5703s, Mean Inference Time: 0.0085s (6683 images processed)
+2025-05-26 23:46:11,333 - INFO - Evaluating EfficientViT-b0 (efficientvit_b0.r224_in1k)
+2025-05-26 23:47:44,880 - INFO - EfficientViT-b0: Total Inference Time: 57.3097s, Mean Inference Time: 0.0086s (6683 images processed)
+2025-05-26 23:47:44,881 - INFO - Evaluating EfficientViT-b2 (efficientvit_b2.r224_in1k)
+2025-05-26 23:50:29,397 - INFO - EfficientViT-b2: Total Inference Time: 124.3312s, Mean Inference Time: 0.0186s (6683 images processed)
+2025-05-26 23:50:29,397 - INFO - Evaluating EfficientViT-m5 (efficientvit_m5.r224_in1k)
+2025-05-26 23:53:59,289 - INFO - EfficientViT-m5: Total Inference Time: 170.8590s, Mean Inference Time: 0.0256s (6683 images processed)
+2025-05-26 23:53:59,289 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-26 23:56:29,851 - INFO - MobileViT-xx_small: Total Inference Time: 113.0664s, Mean Inference Time: 0.0169s (6683 images processed)
+2025-05-26 23:56:29,851 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-26 23:58:52,637 - INFO - MobileViT-x_small: Total Inference Time: 109.1825s, Mean Inference Time: 0.0163s (6683 images processed)
+2025-05-26 23:58:52,637 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-05-27 00:04:51,569 - INFO - MobileViT-small: Total Inference Time: 321.7763s, Mean Inference Time: 0.0481s (6683 images processed)
+2025-05-27 00:04:51,570 - INFO - Evaluating Swin-tiny (swin_tiny_patch4_window7_224)
+2025-05-27 00:06:25,609 - INFO - Swin-tiny: Total Inference Time: 64.1791s, Mean Inference Time: 0.0096s (6683 images processed)
+2025-05-27 00:06:25,609 - INFO - Evaluating Swin-small (swin_small_patch4_window7_224)
+2025-05-27 00:09:14,733 - INFO - Swin-small: Total Inference Time: 136.3858s, Mean Inference Time: 0.0204s (6683 images processed)
+2025-05-27 00:09:14,733 - INFO - Evaluating Swin-base (swin_base_patch4_window7_224)
+2025-05-27 00:11:57,936 - INFO - Swin-base: Total Inference Time: 130.8720s, Mean Inference Time: 0.0196s (6683 images processed)
+2025-05-27 00:11:57,937 - INFO - Evaluating ViT-tiny (vit_tiny_patch16_224)
+2025-05-27 00:13:00,274 - INFO - ViT-tiny: Total Inference Time: 34.2567s, Mean Inference Time: 0.0051s (6683 images processed)
+2025-05-27 00:13:00,275 - INFO - Evaluating ViT-small (vit_small_patch16_224)
+2025-05-27 00:13:59,084 - INFO - ViT-small: Total Inference Time: 31.6390s, Mean Inference Time: 0.0047s (6683 images processed)
+2025-05-27 00:13:59,085 - INFO - Evaluating ViT-base (vit_base_patch16_224)
+2025-05-27 00:15:05,111 - INFO - ViT-base: Total Inference Time: 26.4986s, Mean Inference Time: 0.0040s (6683 images processed)
+2025-05-27 00:15:05,111 - INFO - Evaluating ConvNeXt-tiny (convnext_tiny)
+2025-05-27 00:16:11,435 - INFO - ConvNeXt-tiny: Total Inference Time: 39.0318s, Mean Inference Time: 0.0058s (6683 images processed)
+2025-05-27 00:16:11,435 - INFO - Evaluating ConvNeXt-small (convnext_small)
+2025-05-27 00:17:52,428 - INFO - ConvNeXt-small: Total Inference Time: 69.9659s, Mean Inference Time: 0.0105s (6683 images processed)
+2025-05-27 00:17:52,432 - INFO - Saved inference times to outputs_test\summaries\inference_times_all_images.csv

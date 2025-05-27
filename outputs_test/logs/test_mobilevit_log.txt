@@ -1,0 +1,10 @@
+2025-04-26 10:47:29,936 - INFO - Starting MobileViT models evaluation
+2025-04-26 10:47:30,384 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-04-26 10:47:53,338 - INFO - MobileViT-xx_small: Accuracy: 98.28%, Precision: 0.9828, Recall: 0.9828, F1: 0.9828
+2025-04-26 10:47:53,339 - INFO - Evaluating MobileViT-x_small (apple/mobilevit-x-small)
+2025-04-26 10:48:17,796 - INFO - MobileViT-x_small: Accuracy: 98.28%, Precision: 0.9828, Recall: 0.9828, F1: 0.9828
+2025-04-26 10:48:17,796 - INFO - Evaluating MobileViT-small (apple/mobilevit-small)
+2025-04-26 10:48:47,185 - INFO - MobileViT-small: Accuracy: 98.32%, Precision: 0.9834, Recall: 0.9832, F1: 0.9833
+2025-04-26 10:48:47,186 - INFO - Saved test metrics to outputs_test\summaries\test_metrics_mobilevit.csv
+2025-05-27 20:07:02,767 - INFO - Starting MobileViT models evaluation
+2025-05-27 20:07:05,235 - INFO - Evaluating MobileViT-xx_small (apple/mobilevit-xx-small)
