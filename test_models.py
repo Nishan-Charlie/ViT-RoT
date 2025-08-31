@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import torch
+import torch.nn as nn
 from torchvision import datasets
 from torchvision import transforms
+from torch.utils.data import DataLoader
 from transformers import MobileViTForImageClassification, MobileViTImageProcessor
 import timm
 from timm.data import resolve_model_data_config, create_transform
@@ -9,12 +11,16 @@ from PIL import Image
 import os
 import sys
 import numpy as np
+from tqdm import tqdm
+from sklearn.metrics import precision_recall_fscore_support, confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
 import pandas as pd
 import argparse
 import traceback
 import logging
 import random
-import time
+from torch.cuda.amp import autocast
 
 # Add project root to sys.path for custom module imports
 project_root = os.path.abspath(os.path.dirname(__file__))
@@ -35,64 +41,144 @@ def set_seed(seed=42):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-# Custom Image Dataset for a single image
-class SingleImageDataset:
-    def __init__(self, image_path, transform=None):
-        self.image_path = image_path
-        self.transform = transform
+# Custom ImageFolder to handle missing files
+class SafeImageFolder(datasets.ImageFolder):
+    def __init__(self, root, transform=None, processor=None):
+        super().__init__(root, transform=transform)
+        self.invalid_files = []
+        self.processor = processor
 
     def __getitem__(self, index):
+        path, target = self.samples[index]
         try:
-            image = Image.open(self.image_path).convert('RGB')
-            if self.transform is not None:
-                image = self.transform(image)
-            return image
+            sample = self.loader(path)
+            if self.processor is not None:
+                sample = self.processor(sample, return_tensors="pt")['pixel_values'].squeeze(0)
+            elif self.transform is not None:
+                sample = self.transform(sample)
+            return sample, target
         except Exception as e:
-            print(f"Error loading {self.image_path}: {e}")
-            return torch.zeros(3, 224, 224) if self.transform is None else self.transform(Image.new('RGB', (224, 224)))
+            print(f"Error loading {path}: {e}")
+            self.invalid_files.append(path)
+            dummy = torch.zeros(3, 224, 224) if self.transform is None and self.processor is None else \
+                   (self.processor(Image.new('RGB', (224, 224)), return_tensors="pt")['pixel_values'].squeeze(0) if self.processor else self.transform(Image.new('RGB', (224, 224))))
+            return dummy, -1  # -1 indicates invalid sample
 
     def __len__(self):
-        return 1
+        return len(self.samples)
 
-# Collect all images from the test dataset
-def collect_all_images(test_dir, class_names):
-    print("Collecting all images from test dataset...")
-    valid_images = []
-    for class_idx, class_name in enumerate(class_names):
+# Validate dataset
+def validate_dataset(test_dir, class_names):
+    print("Validating test dataset...")
+    total_images = 0
+    if not os.path.exists(test_dir):
+        raise FileNotFoundError(f"Directory {test_dir} does not exist")
+    for class_name in class_names:
         class_path = os.path.join(test_dir, class_name)
         if not os.path.exists(class_path):
             print(f"Warning: Class directory {class_path} does not exist")
             continue
         files = [f for f in os.listdir(class_path) if f.lower().endswith(('.jpg', '.png', '.jpeg'))]
+        print(f"test/{class_name}: {len(files)} images found")
+        total_images += len(files)
         for f in files:
             file_path = os.path.join(class_path, f)
+            if not os.path.isfile(file_path):
+                print(f"Error: File {file_path} is inaccessible")
             try:
                 Image.open(file_path).verify()
-                valid_images.append(file_path)
             except Exception as e:
                 print(f"Error: Corrupted image {file_path}: {e}")
-    if not valid_images:
+    if total_images == 0:
         raise ValueError("No valid images found in test dataset")
-    print(f"Collected {len(valid_images)} images")
-    return valid_images
+    print(f"Test dataset validation complete: {total_images} images found.")
 
-# Evaluate model on a single image and return inference time
-def evaluate_model(model, image_path, transform, device, model_type, processor=None):
-    dataset = SingleImageDataset(image_path, transform=transform)
-    image = dataset[0].unsqueeze(0).to(device)  # Add batch dimension
-
-    # Measure inference time
+# Evaluate models on test set
+def evaluate_model(model, test_loader, device, model_type, variant, output_dir, class_names, processor=None):
     model.eval()
-    start_time = time.time()
+    correct = 0
+    total = 0
+    all_preds, all_labels = [], []
+    criterion = nn.CrossEntropyLoss() if model_type == "MobileViT" else None
+    total_loss = 0.0
+
     with torch.no_grad():
-        if model_type == "MobileViT":
-            pil_image = transforms.ToPILImage()(image.squeeze(0).cpu())
-            inputs = processor([pil_image], return_tensors="pt").to(device)
-            _ = model(**inputs).logits
-        else:
-            _ = model(image)
-    inference_time = time.time() - start_time
-    return inference_time
+        for images, labels in tqdm(test_loader, desc=f"Evaluating {model_type}-{variant}"):
+            valid_mask = labels != -1
+            if not valid_mask.any():
+                continue
+            images, labels = images[valid_mask].to(device), labels[valid_mask].to(device)
+
+            if model_type == "MobileViT":
+                with autocast():
+                    outputs = model(images).logits
+                    loss = criterion(outputs, labels)
+                total_loss += loss.item() * images.size(0)
+            else:
+                outputs = model(images)
+
+            _, predicted = torch.max(outputs, 1)
+            total += labels.size(0)
+            correct += (predicted == labels).sum().item()
+            all_preds.extend(predicted.cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
+
+    accuracy = 100 * correct / total if total > 0 else 0
+    loss = total_loss / total if total > 0 and model_type == "MobileViT" else None
+    precision, recall, f1, _ = precision_recall_fscore_support(
+        all_labels, all_preds, average='weighted', zero_division=0
+    )
+
+    # Plot confusion matrix
+    plots_dir = os.path.join(output_dir, 'plots')
+    os.makedirs(plots_dir, exist_ok=True)
+    model_display_name = {
+        'cct_tiny': 'CCT-Tiny', 'cct_small': 'CCT-Small', 'cct_base': 'CCT-Base', 'cct_large': 'CCT-Large',
+        'efficientvit_b0': 'EfficientViT-B0', 'efficientvit_b2': 'EfficientViT-B2',
+        'efficientvit_m5': 'EfficientViT-M5', 'efficientvit_m7': 'EfficientViT-M7',
+        'mobilevit_xx_small': 'MobileViT-XX-Small', 'mobilevit_x_small': 'MobileViT-X-Small',
+        'mobilevit_small': 'MobileViT-Small',
+        'swin_tiny': 'Swin-Tiny', 'swin_small': 'Swin-Small', 'swin_base': 'Swin-Base',
+        'vit_tiny': 'ViT-Tiny', 'vit_small': 'ViT-Small', 'vit_base': 'ViT-Base',
+        'convnext_tiny': 'ConvNeXt-Tiny', 'convnext_small': 'ConvNeXt-Small', 'convnext_base': 'ConvNeXt-Base'
+    }.get(f"{model_type.lower()}_{variant}", f"{model_type}-{variant}")
+    cm = confusion_matrix(all_labels, all_preds)
+    plt.figure(figsize=(14, 12))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+                xticklabels=class_names, yticklabels=class_names,
+                annot_kws={"size": 12}, cbar=True)
+    plt.title(f'Confusion Matrix for {model_display_name}', fontsize=16, pad=20)
+    plt.xlabel('Predicted Label', fontsize=14)
+    plt.ylabel('True Label', fontsize=14)
+    plt.xticks(rotation=45, ha='right', fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.tight_layout()
+    plt.savefig(os.path.join(plots_dir, f'confusion_matrix_validation_{model_type.lower()}_{variant}.png'), dpi=300)
+    plt.close()
+
+    # Save confusion matrix as CSV
+    summaries_dir = os.path.join(output_dir, 'summaries')
+    os.makedirs(summaries_dir, exist_ok=True)
+    cm_df = pd.DataFrame(cm, index=class_names, columns=class_names)
+    cm_df.index.name = 'True Label'
+    cm_df.columns.name = 'Predicted Label'
+    cm_csv_path = os.path.join(summaries_dir, f'confusion_matrix_{model_type.lower()}_{variant}.csv')
+    cm_df.to_csv(cm_csv_path)
+    print(f"Saved confusion matrix to {cm_csv_path}")
+
+    # Return metrics with model_variant for CSV
+    metrics = {
+        'model_variant': f"{model_type}-{variant}",
+        'models': model_type,
+        'variant': variant,
+        'accuracy': accuracy,
+        'precision': precision,
+        'recall': recall,
+        'f1_score': f1
+    }
+    if model_type == "MobileViT":
+        metrics['loss'] = loss
+    return metrics
 
 # Setup logging
 def setup_logging(output_dir):
@@ -125,7 +211,7 @@ def main(args):
         return
 
     logger = setup_logging(output_dir)
-    logger.info("Starting inference time evaluation for all images")
+    logger.info("Starting models evaluation")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     num_classes = 11
@@ -133,6 +219,7 @@ def main(args):
     data_dir = args.data_dir
     test_dir = os.path.join(data_dir, "val")
 
+    global class_names
     class_names = [
         "Bacterial_spot",
         "Early_blight",
@@ -147,16 +234,12 @@ def main(args):
         "Tomato_Yellow_Leaf_Curl_Virus"
     ]
 
-    # Collect all images
     try:
-        image_paths = collect_all_images(test_dir, class_names)
+        validate_dataset(test_dir, class_names)
     except Exception as e:
-        logger.error(f"Failed to collect images: {e}")
+        logger.error(f"Test dataset validation failed: {e}")
         traceback.print_exc()
         return
-
-    num_images = len(image_paths)
-    logger.info(f"Total images to process: {num_images}")
 
     # Model configurations
     models = [
@@ -216,19 +299,12 @@ def main(args):
             logger.info(f"Evaluating {model_type}-{variant} ({model_name})")
 
             try:
-                # Initialize model and transform
                 if model_type == "MobileViT":
                     processor = MobileViTImageProcessor.from_pretrained(model_name)
                     model = MobileViTForImageClassification.from_pretrained(
-                        model_name,
-                        num_labels=num_classes,
-                        ignore_mismatched_sizes=True
+                        model_name, num_labels=len(class_names), ignore_mismatched_sizes=True
                     )
-                    transform = transforms.Compose([
-                        transforms.Resize((224, 224)),
-                        transforms.ToTensor(),
-                        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-                    ])
+                    test_dataset = SafeImageFolder(test_dir, processor=processor)
                 elif model_type == "CCT":
                     if model_name == 'cct_7_7x2_224':
                         model = cct_7_7x2_224(
@@ -253,41 +329,33 @@ def main(args):
                         transforms.ToTensor(),
                         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
                     ])
+                    test_dataset = SafeImageFolder(test_dir, transform=transform)
                 else:
                     model = timm.create_model(model_name, pretrained=False, num_classes=num_classes)
                     data_config = resolve_model_data_config(model)
                     transform = create_transform(**data_config, is_training=False)
+                    test_dataset = SafeImageFolder(test_dir, transform=transform)
 
                 if not os.path.exists(model_path):
                     logger.warning(f"Model weights not found at {model_path}, skipping")
                     continue
 
-                model.load_state_dict(torch.load(model_path))
+                model.load_state_dict(torch.load(model_path, map_location=device))
                 model.to(device)
 
-                # Evaluate inference time for each image
-                inference_times = []
-                for image_path in image_paths:
-                    try:
-                        inference_time = evaluate_model(
-                            model, image_path, transform, device, model_type,
-                            processor=processor if model_type == "MobileViT" else None
-                        )
-                        inference_times.append(inference_time)
-                    except Exception as e:
-                        logger.warning(f"Error processing {image_path} for {model_type}-{variant}: {e}")
-                        continue
+                if test_dataset.invalid_files:
+                    logger.warning(f"{len(test_dataset.invalid_files)} invalid files in test dataset: {test_dataset.invalid_files[:5]}")
 
-                # Calculate total and mean inference time
-                total_inference_time = sum(inference_times) if inference_times else 0.0
-                mean_inference_time = np.mean(inference_times) if inference_times else 0.0
-                metrics_list.append({
-                    'model_variant': f"{model_type}-{variant}",
-                    'total_inference_time': total_inference_time,
-                    'mean_inference_time': mean_inference_time
-                })
-                logger.info(f"{model_type}-{variant}: Total Inference Time: {total_inference_time:.4f}s, "
-                            f"Mean Inference Time: {mean_inference_time:.4f}s ({len(inference_times)} images processed)")
+                test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False)
+
+                metrics = evaluate_model(
+                    model, test_loader, device, model_type, variant, output_dir, class_names, processor if model_type == "MobileViT" else None
+                )
+                metrics_list.append(metrics)
+                logger.info(f"{model_type}-{variant}: Accuracy: {metrics['accuracy']:.2f}%, "
+                            f"Precision: {metrics['precision']:.4f}, Recall: {metrics['recall']:.4f}, "
+                            f"F1: {metrics['f1_score']:.4f}" +
+                            (f", Loss: {metrics['loss']:.4f}" if model_type == "MobileViT" else ""))
 
             except Exception as e:
                 logger.error(f"Error evaluating {model_type}-{variant}: {e}")
@@ -298,15 +366,16 @@ def main(args):
     summaries_dir = os.path.join(output_dir, 'summaries')
     os.makedirs(summaries_dir, exist_ok=True)
     metrics_df = pd.DataFrame(metrics_list)
-    csv_path = os.path.join(summaries_dir, 'inference_times_all_images.csv')
+    csv_path = os.path.join(summaries_dir, 'test_metrics_all_models.csv')
     metrics_df.to_csv(csv_path, index=False)
-    logger.info(f"Saved inference times to {csv_path}")
+    logger.info(f"Saved test metrics to {csv_path}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Measure inference times of models on all images in test dataset")
+    parser = argparse.ArgumentParser(description="Test all trained models on tomato leaf disease test dataset")
+    parser.add_argument('--batch_size', type=int, default=16,
+                        help="Batch size for testing")
     parser.add_argument('--data_dir', type=str,
                         default="dataset/tomato_leaf_dataset",
                         help="Path to the dataset root directory")
-
     args = parser.parse_args()
     main(args)

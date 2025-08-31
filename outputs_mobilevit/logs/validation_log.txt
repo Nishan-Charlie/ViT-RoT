@@ -1,0 +1,27 @@
+2025-05-28 23:36:09,491 - INFO - Starting MobileViT models validation
+2025-05-28 23:36:11,036 - INFO - Class to index mapping: {'Bacterial_spot': 0, 'Early_blight': 1, 'Late_blight': 2, 'Leaf_Mold': 3, 'Septoria_leaf_spot': 4, 'Spider_mites Two-spotted_spider_mite': 5, 'Target_Spot': 6, 'Tomato_Yellow_Leaf_Curl_Virus': 7, 'Tomato_mosaic_virus': 8, 'healthy': 9, 'powdery_mildew': 10}
+2025-05-28 23:36:11,037 - INFO - Validating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-28 23:36:47,140 - INFO - Validating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-28 23:37:22,711 - INFO - Validating MobileViT-small (apple/mobilevit-small)
+2025-05-28 23:37:59,092 - INFO - Saved validation metrics to outputs_mobilevit\summaries\mobilevit_validation_metrics.csv
+2025-05-29 00:07:58,660 - INFO - Starting MobileViT models validation
+2025-05-29 00:08:00,413 - INFO - Class to index mapping: {'Bacterial_spot': 0, 'Early_blight': 1, 'Late_blight': 2, 'Leaf_Mold': 3, 'Septoria_leaf_spot': 4, 'Spider_mites Two-spotted_spider_mite': 5, 'Target_Spot': 6, 'Tomato_Yellow_Leaf_Curl_Virus': 7, 'Tomato_mosaic_virus': 8, 'healthy': 9, 'powdery_mildew': 10}
+2025-05-29 00:08:00,414 - INFO - Validating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-29 00:08:37,792 - INFO - Validating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-29 00:09:13,728 - INFO - Validating MobileViT-small (apple/mobilevit-small)
+2025-05-29 00:09:51,335 - INFO - Saved validation metrics to outputs_mobilevit\summaries\mobilevit_validation_metrics.csv
+2025-05-29 00:09:51,652 - INFO - Friedman Test: chi-squared = 0.2609, p-value = 0.877714
+2025-05-29 00:09:51,652 - INFO - Friedman test not significant, skipping Nemenyi test.
+2025-05-29 00:09:51,653 - ERROR - Error performing statistical tests: cannot access local variable 'summaries_dir' where it is not associated with a value
+2025-05-29 00:09:51,658 - INFO - Updated metrics CSV with Friedman p-value at outputs_mobilevit\summaries\mobilevit_validation_metrics.csv
+2025-05-29 08:28:59,161 - INFO - Starting MobileViT models validation
+2025-05-29 08:29:02,383 - INFO - Class to index mapping: {'Bacterial_spot': 0, 'Early_blight': 1, 'Late_blight': 2, 'Leaf_Mold': 3, 'Septoria_leaf_spot': 4, 'Spider_mites Two-spotted_spider_mite': 5, 'Target_Spot': 6, 'Tomato_Yellow_Leaf_Curl_Virus': 7, 'Tomato_mosaic_virus': 8, 'healthy': 9, 'powdery_mildew': 10}
+2025-05-29 08:29:02,384 - INFO - Validating MobileViT-xx_small (apple/mobilevit-xx-small)
+2025-05-29 08:29:40,854 - INFO - Validating MobileViT-x_small (apple/mobilevit-x-small)
+2025-05-29 08:30:23,196 - INFO - Validating MobileViT-small (apple/mobilevit-small)
+2025-05-29 08:31:38,154 - INFO - Saved validation metrics to outputs_mobilevit\summaries\mobilevit_validation_metrics.csv
+2025-05-29 08:31:38,154 - INFO - Performing statistical tests with 6683 samples
+2025-05-29 08:31:39,785 - INFO - Friedman Test: chi-squared = 0.2609, p-value = 0.877714
+2025-05-29 08:31:39,786 - INFO - Friedman test not significant, skipping Nemenyi test.
+2025-05-29 08:31:39,788 - INFO - Saved statistical test results to outputs_mobilevit\summaries\statistical_test_results.txt
+2025-05-29 08:31:39,796 - INFO - Updated metrics CSV with Friedman p-value at outputs_mobilevit\summaries\mobilevit_validation_metrics.csv
